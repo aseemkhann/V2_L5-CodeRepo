@@ -2,7 +2,7 @@ all:
   vars:
     ansible_user: arista
     ansible_network_os: eos
-    ansible_password: PASSWORD-GOES-HERE
+    ansible_password: 94xmy144q3stcq3y
     ansible_connection: httpapi
     ansible_httpapi_use_ssl: True
     ansible_httpapi_validate_certs: False
