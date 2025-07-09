@@ -1,0 +1,11 @@
+---
+- name: Apply configlets to devices
+  hosts: cvp1
+  vars_files:
+    - ../vars/CVP_model.yml
+  tasks:
+    - name: Apply configlets
+      arista.cvp.cv_device_v3:
+        devices: "{{ CVP_DEVICES }}"
+        state: present
+        apply_mode: loose
