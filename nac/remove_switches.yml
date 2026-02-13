@@ -1,0 +1,19 @@
+
+---
+# This Ansible Playbook Is Used To Remove Switches from Site1
+- name: Remove Switches from ND Fabrics
+  hosts: nd
+  gather_facts: false
+
+  tasks:
+    - name: Remove Switches From All Sites
+      cisco.dcnm.dcnm_rest:
+        method: DELETE
+        path: "/api/v1/manage/fabrics/site1-fabric/switches/{{ item }}"
+      register: result
+      loop:
+        - 9CXKH7FGMNB
+        - 97YQPYE9NLN
+        - 9PKD2Z8GK31
+        - 9QJJSV77NWI
+
