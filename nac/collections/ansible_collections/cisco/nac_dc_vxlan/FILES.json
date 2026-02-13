@@ -1,0 +1,5115 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "CODE_OF_CONDUCT.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6770078539bbec8885e2eaed5c3e32dd771bd22be0cd3c6b1d60dae20b123c8",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bfa8ea88109e6c56a42ac84daf3ea26040b7927dbb35783c869db41024432a35",
+   "format": 1
+  },
+  {
+   "name": "requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2b125b389aac098987cf949734ee3b83704c586e5dc97146f55ad5a4da58632",
+   "format": 1
+  },
+  {
+   "name": ".ansible-lint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b63d84c487f27b667720c0e15e555758a18d2d43a4c84ea6644d2e544be55ec7",
+   "format": 1
+  },
+  {
+   "name": "images",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "images/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "23e9939164cad964c2338b8059e4d3def72eef9523e32594503efd50960fcae4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/test",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/test/inventory.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83ddbf79843928011c58487a381c92e2045e54700f11f8ad70ef1d61b2669025",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/check_roles.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7aa59597de75f554c4e778ff9a5f9244c0d9ff5be875b88497288eb6a28e569c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/get_credentials.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37e69b3eb0a3368c320a778007aaf0b2f090d1c952c7c7671b3871cd398f91e4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/run_map.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0991842850815fc24a9e6c0fff0c9843366282daabb01c79f330d20810e7d866",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_service_model.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37fd54046bc470207c8bbb1587c3ba8bf4599affaf3e888aa0a27c4a0f6571e6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_999_verify.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52800f4d82316382cb33a2f33280f0fbe5e5635f4c7132b73137bdf6f3989aa7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_004_calculate_md5_policies.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a9d71dedc7cea9131b14dd98be7d97652b9bcde00477450ba2d977dfd86716f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_003_list_defaults.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "455369b26670235d2f5e535fe41b09ac41127874cc7796d8f3b888fc459e4272",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_106_topology_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b842f983f3f02d79a059e6ed43c03697fd222e000fb81c8d653abefd8a3a26dc",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_002_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c50aca29a81d24d11bea1d977c7cadb0e1a22a4e2548664bf6216adcb56c833d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_107_topology_vpc_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "985f24d7361243aaf633c44d8d1dba2cd1be828244a10eaf2850528d1f0a13d0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_001_fabric.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da445eb51612c8ec627990a4aaf9450ad4835e1162dda49c18ea6e371da5804f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_118_topology_edge_connections.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "807293e506a3f3271e23fb0f24d80309c38cc45871030eeb2c244aed7d8ed650",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_104_topology_switches.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "016d665ae70b89b4ddf31019dfb14ceca7a4ab150b5d94050d41c1d4dba5c310",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_108_vrf_lites.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64bf385045ea070905f420d3e4d32399c6b93cb5f9295e9d2c7fe8bead94dab9",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_109_route_control.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "416e3aee046b5c4e012ab5f9bd792e2763d4e3d39d5c44eb8e85389692b60ce9",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/prepare_plugins/prep_105_fabric_overlay.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c1455de2b4f9e37f3fc23d25d129e3a8dc76e598bd08249853415a979d958583",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/nac_dc_validate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a14ff64dd32b834c3b238815f589b6f3e82df8c26c8c34b7b4b5b29787b6c960",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/read_run_map.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "31a193bbacad744fc64c4fc5633d8da74a0b2dd91cc57b380c7761cfa480b489",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/merge_defaults.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "04cba0f7b92fa1a024ab491c4c1d171f869f3650251d345c8c68794c7600e164",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/common/change_flag_manager.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e325ecd6b2b80f59597a1cb6e7e197c9fb48abb52507760865d4b16b3937962",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/add_device_check.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "add5980f8c03fe7bd48c034f9a6e858abdd98ff8365e2c530436ac40b5ab9a65",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/fabrics_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed18fc89c6baec3459ce1644b5ace19479ebdc8f21718af7a147b612ce9e5232",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/diff_model_changes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43b3b32a321bd81ccc1dcddb5c6719898ff8b4bb4e6e44ed111e7d4da0f91536",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/get_poap_data.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50d115d5b922606b77aa2dc7f1e398518aa206d14fb9b661fd5c2568986a55d3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/update_switch_hostname_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2baf9a093d53f630093de49d34d909a0570c0499c7b652cc93b99fcb6e60a3af",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/unmanaged_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d4d6cd4c7a650a8dc4f57a2d758de2609eb117538ce7ad0d51a555df63762ec7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/fabric_deploy_manager.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0b500643d6e7887f1e2648ef677fc59be504382f4352e371a96d027759fee827",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/fabrics_config_save.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99c70fe9a00b36969856ff01f5b18040bcf92de45f621a904cded57ed43adf06",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/existing_links_check.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf4b997009e9ae81590d07c6bcd08bc6b8b97c48309963cc23c25c5af9494bd2",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/prepare_msite_data.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "937c2c6c672bfaa90e2ed06bd66f397e30d3df239bad4e1ef2c3f30b6b646664",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/vpc_pair_check.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de42a315560f06627eedbaf1acb08607108cbaa083912d0c5b140bf89c32152d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/prepare_msite_child_fabrics_data.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2846bed05b51f88f588b9068672d546c2a17de81e0f48fa80615d35d9343744",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/manage_child_fabrics.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f32676e4a11b41d83347d6f1a78c18217a7efbe78efd8240e709e58dd8816afb",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/diff_compare.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57ccf1781341a4db61b68793f497e817fec12981f24b83938bcbc8ad16ed213c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/links_filter_and_remove.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "31167171cf02cbc11c49b09b2b2739b311a3acdec93e37a5d38de3a9e40e977c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/fabric_check_sync.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c0e751941cc38a57787cdf7e878bcf3649caa2b462672cd1df3afed3839d6d1c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/unmanaged_edge_connections.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ee693f07c36241b92ec508be5f971d01fc178385e386db034bb579bbc794321",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtc/verify_tags.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "554d2597d9ab6230423e9ce9c4ee359be33b463016bee6312fc54d33d7a5955b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtd",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/dtd/prepare_service_model.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d6a0627470bada6f27012f888516df7ae5441847ed8297a1264f0fdaf40a5760",
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils/helper_functions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "75e1bb78e09f4869a5af1efcffda0708ae0330a38e3432fc98fde8772464e79c",
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils/data_model_keys.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2655ed82f9ea8fdf57db0c0b071946b1f8b2e2a0959b238ff85b5c0e2041cec9",
+   "format": 1
+  },
+  {
+   "name": "plugins/filter",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/filter/version_compare.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cb98fa39a4dca2cb469f51e9d50d0d4ca63b77ebe18062be61e15de8efb8f529",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/group_vars/ndfc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/group_vars/ndfc/examples",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/group_vars/ndfc/examples/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c840b213d0c0aa0dbcd50d31c31246765305c60f4bf4a2b61e22c6ca97a772cc",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/fabric_vars_example.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a942edec7dfe1c640a55db2735a8764c88eb38e96174deaf67045592ade73604",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/test_update_data_model.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b06bed9d784d609d204a9417e29f1a4f0a6d89c9a50d09658e382c3205236b8a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/test_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "870880e4953757d940347831403107e01b017b9a38d52604bd582d9aba0cd593",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_remove",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_remove/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_remove/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc4120e27060f8d53468b64744f41ab2e6bc6f0f485e1fcf43d5c316c79d109e",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_remove/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_remove/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28a13f5efecc794a8cbc56ded3d461db84b0a498e1a88194a1b02f6022b3f0d8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_remove/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_remove/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "36525d8546c606c6b6c5d253ea26a476cab2b2cce0324ef86e0dede6be38d92c",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_update_data_model",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_update_data_model/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_update_data_model/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e082678def0182bacf087c8251d4958ea135695a742992a9df674618b1ab7df2",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_create",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_create/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_create/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "84c1757b43c836f3078034b86bec3fd57e031c4494c8f5403a968d0526c20c63",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_create/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_create/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8ed3a88026d5bb47e522fc14df37edcb5e09875a0835f77defcff8e08cc5d61",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_create/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_create/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "36525d8546c606c6b6c5d253ea26a476cab2b2cce0324ef86e0dede6be38d92c",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_common/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/roles/test_common/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16fb4c51560a68da23774668086c080a1f8340e8aaa2aaa4c9ac60a4b048e357",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c16fc89895fa6e2e6b8539a2ac7d0594b7a32439d6ed53c3ffbc732f84c55340",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a9e2fa816bdd2a2496579639e1349f552d6443ed9a51fd0e9e1a762729e6aef6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d493afe58222fa5a9022faf11096fcc9af3316e5bf120cc23630e66f27e88e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "568e3786f7c0dd42438f71c01479c8e00e3b73b9a39ce5429cd1941ec0fc3f1b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db71a3509fd2db0db645bad88a201e960a6a5c01079f6b9ae60fd651daa121ad",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69198736a73b4e81566b878e025585b341d11822e8a721c6ea13505a18d83ec8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "409346b6f5efc0ea5f39358f6f1d23027bd3dbd1b347c106d3c7b5f94b656efd",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4d034b3a01633449039ed181faf4de357917518751895610b532dc1377be0bc",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "432a562106e4e10db3b265ef219a3474b2c1c8619275bb802131bc924b9fbc48",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95110791dc69ce36cb8852c9b4d96190d6faba1fe4c729e4c4b051e21501aecb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189e1a3e128a22f8e68ffe7593b0c8590c6dc8c03ab5b4cfeabed68af7f0499f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983787e1d458dc00c3233790f77063a7c2dadd9d82c6fd4ad1d35414811385b6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00cc6f09bb1e9636b7ca14396db59c1e09d8faea15b06dc6276063c77433d82f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_sha_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a9e2fa816bdd2a2496579639e1349f552d6443ed9a51fd0e9e1a762729e6aef6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d493afe58222fa5a9022faf11096fcc9af3316e5bf120cc23630e66f27e88e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "568e3786f7c0dd42438f71c01479c8e00e3b73b9a39ce5429cd1941ec0fc3f1b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d05506fbb11e15fd1da9655485a3d199be510348060d851be0abec4f5f3e3107",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69198736a73b4e81566b878e025585b341d11822e8a721c6ea13505a18d83ec8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "409346b6f5efc0ea5f39358f6f1d23027bd3dbd1b347c106d3c7b5f94b656efd",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "141fd1c079cfe7ac91502b79c0e31ab921fc1f9f21aa59693419031b2c5e4b18",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "432a562106e4e10db3b265ef219a3474b2c1c8619275bb802131bc924b9fbc48",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95110791dc69ce36cb8852c9b4d96190d6faba1fe4c729e4c4b051e21501aecb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189e1a3e128a22f8e68ffe7593b0c8590c6dc8c03ab5b4cfeabed68af7f0499f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983787e1d458dc00c3233790f77063a7c2dadd9d82c6fd4ad1d35414811385b6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00cc6f09bb1e9636b7ca14396db59c1e09d8faea15b06dc6276063c77433d82f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_asm_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "571048dc794d512fcc31ff057c528b0c2392c379a4d7e6cc2c5349414fd96395",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "53ed1da292f5dc9b50a4935ad6b3e163f4bfd0e14a1ebf0e7d32da8b2de9b85a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fe48ea8bbe837c1c8d9bc86f1ebeea76e568496047b1a7fccd0141be24e3e9a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "deae4c0dbe0e68008eda26a016f5d28d0ecded9b26e23cd23c2f4e6abf0bc079",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64a3ec098054e532a8354f7ea28a3b60b08acd54fdc13523271aea38784a6ba1",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f92a702cd8da0a3b9eda7eafe72bf2b0336f2528672184dd51694a2e3f9dd8d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6068558611cbaf46c05019da789a6b190f54e95be6bb74c6d2e54a2df4262cc",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "141fd1c079cfe7ac91502b79c0e31ab921fc1f9f21aa59693419031b2c5e4b18",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ae102a98aa90de20dce2a4b4158b8c1c047f33cfa9252b9e9d6b2ebaed7f9e0",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d0d5c90f9bfbb3471efe92c031d47b1a37b9f91de95539cb23b5bb8008fafd1",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b9dca0ed703f3698baf3c3ccd90422ffeaa30b0a1940a830d8a93d3439dcacee",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a4872b9c42f8de489ce1f343f524f90487c30e3d2611370153ce950e6d90a23e",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "463ea61e8b7106f524239faceadaf2567ad26f3f744e5d31700f853857969e46",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fc44bc4a6dc87286141b9cf9a4829a54072341770664d1a6a682931ec8811398",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_large_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70801afe0e1493c1f430d5d3bb5633496c782cbde89563998378662ed46d6c33",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14a0724eb9155518e374b94c98d6ba441359d154feb160fa1ae08903a8d9f855",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d493afe58222fa5a9022faf11096fcc9af3316e5bf120cc23630e66f27e88e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "568e3786f7c0dd42438f71c01479c8e00e3b73b9a39ce5429cd1941ec0fc3f1b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "adc42282210856b3d2f39c3d08a3d3aa0d51ca116359bd41dda6e6d769a45253",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69198736a73b4e81566b878e025585b341d11822e8a721c6ea13505a18d83ec8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "409346b6f5efc0ea5f39358f6f1d23027bd3dbd1b347c106d3c7b5f94b656efd",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "141fd1c079cfe7ac91502b79c0e31ab921fc1f9f21aa59693419031b2c5e4b18",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "432a562106e4e10db3b265ef219a3474b2c1c8619275bb802131bc924b9fbc48",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95110791dc69ce36cb8852c9b4d96190d6faba1fe4c729e4c4b051e21501aecb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189e1a3e128a22f8e68ffe7593b0c8590c6dc8c03ab5b4cfeabed68af7f0499f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983787e1d458dc00c3233790f77063a7c2dadd9d82c6fd4ad1d35414811385b6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00cc6f09bb1e9636b7ca14396db59c1e09d8faea15b06dc6276063c77433d82f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_asm_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2844f22819c740b4cc37aab60cb73fb868f7f9e603c6e2a6c26fb75eceb645f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d493afe58222fa5a9022faf11096fcc9af3316e5bf120cc23630e66f27e88e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "568e3786f7c0dd42438f71c01479c8e00e3b73b9a39ce5429cd1941ec0fc3f1b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "211b6d96c5edfe6ae52cf3d6f36fa784f9ff38433e848c61fb362c74880f4a5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f824089b26f5eba4f69eff5bbc7e4cedeec2dcff43ae06e912600dab0c3533bb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "409346b6f5efc0ea5f39358f6f1d23027bd3dbd1b347c106d3c7b5f94b656efd",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "141fd1c079cfe7ac91502b79c0e31ab921fc1f9f21aa59693419031b2c5e4b18",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "432a562106e4e10db3b265ef219a3474b2c1c8619275bb802131bc924b9fbc48",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95110791dc69ce36cb8852c9b4d96190d6faba1fe4c729e4c4b051e21501aecb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189e1a3e128a22f8e68ffe7593b0c8590c6dc8c03ab5b4cfeabed68af7f0499f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983787e1d458dc00c3233790f77063a7c2dadd9d82c6fd4ad1d35414811385b6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00cc6f09bb1e9636b7ca14396db59c1e09d8faea15b06dc6276063c77433d82f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_ingress_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3a50a35ea7a978eb5a2956862a6ec7643872553715cb4f6fad31ac198f4a97c",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d493afe58222fa5a9022faf11096fcc9af3316e5bf120cc23630e66f27e88e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "568e3786f7c0dd42438f71c01479c8e00e3b73b9a39ce5429cd1941ec0fc3f1b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63fe1ae84bfe9b1c05c22781d2fe65c27a9a3f960260c6189dd7d61a7ece8e0d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f824089b26f5eba4f69eff5bbc7e4cedeec2dcff43ae06e912600dab0c3533bb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "409346b6f5efc0ea5f39358f6f1d23027bd3dbd1b347c106d3c7b5f94b656efd",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "141fd1c079cfe7ac91502b79c0e31ab921fc1f9f21aa59693419031b2c5e4b18",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "432a562106e4e10db3b265ef219a3474b2c1c8619275bb802131bc924b9fbc48",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95110791dc69ce36cb8852c9b4d96190d6faba1fe4c729e4c4b051e21501aecb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189e1a3e128a22f8e68ffe7593b0c8590c6dc8c03ab5b4cfeabed68af7f0499f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983787e1d458dc00c3233790f77063a7c2dadd9d82c6fd4ad1d35414811385b6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00cc6f09bb1e9636b7ca14396db59c1e09d8faea15b06dc6276063c77433d82f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_multicast_bidir_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3a50a35ea7a978eb5a2956862a6ec7643872553715cb4f6fad31ac198f4a97c",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d493afe58222fa5a9022faf11096fcc9af3316e5bf120cc23630e66f27e88e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "568e3786f7c0dd42438f71c01479c8e00e3b73b9a39ce5429cd1941ec0fc3f1b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ffc1b79c2dda693b6e2771de893046f981bfc57e116a79b48fc5628491f99c0",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f824089b26f5eba4f69eff5bbc7e4cedeec2dcff43ae06e912600dab0c3533bb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "409346b6f5efc0ea5f39358f6f1d23027bd3dbd1b347c106d3c7b5f94b656efd",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "141fd1c079cfe7ac91502b79c0e31ab921fc1f9f21aa59693419031b2c5e4b18",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "432a562106e4e10db3b265ef219a3474b2c1c8619275bb802131bc924b9fbc48",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95110791dc69ce36cb8852c9b4d96190d6faba1fe4c729e4c4b051e21501aecb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189e1a3e128a22f8e68ffe7593b0c8590c6dc8c03ab5b4cfeabed68af7f0499f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983787e1d458dc00c3233790f77063a7c2dadd9d82c6fd4ad1d35414811385b6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00cc6f09bb1e9636b7ca14396db59c1e09d8faea15b06dc6276063c77433d82f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_ospf_ingress_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3a50a35ea7a978eb5a2956862a6ec7643872553715cb4f6fad31ac198f4a97c",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_routed_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8487fc9800e347c01bab7bd9de5dc91d2efd59ba6d9fb6e8135322a0938c9d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_access_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d493afe58222fa5a9022faf11096fcc9af3316e5bf120cc23630e66f27e88e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fe40e78f639c7ef78ccab7561ae70d3318510be8e2ac6a6123574631b03994",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_trunk_po.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "568e3786f7c0dd42438f71c01479c8e00e3b73b9a39ce5429cd1941ec0fc3f1b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6be473befe8dd8f14c94afb74c48909cf2fef3f051617d6fcce3c1c470e5f75c",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f824089b26f5eba4f69eff5bbc7e4cedeec2dcff43ae06e912600dab0c3533bb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_access.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "409346b6f5efc0ea5f39358f6f1d23027bd3dbd1b347c106d3c7b5f94b656efd",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "141fd1c079cfe7ac91502b79c0e31ab921fc1f9f21aa59693419031b2c5e4b18",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_routed_subint.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_trunk.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "432a562106e4e10db3b265ef219a3474b2c1c8619275bb802131bc924b9fbc48",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_loopback_fabric.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95110791dc69ce36cb8852c9b4d96190d6faba1fe4c729e4c4b051e21501aecb",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189e1a3e128a22f8e68ffe7593b0c8590c6dc8c03ab5b4cfeabed68af7f0499f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983787e1d458dc00c3233790f77063a7c2dadd9d82c6fd4ad1d35414811385b6",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_loopback.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00cc6f09bb1e9636b7ca14396db59c1e09d8faea15b06dc6276063c77433d82f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_full_small_isis_multicast_bidir_example/topology_int_routed.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd266d28a2ee11d74a76f74ffaa4ac1725361551c877e90936ec1f405493667",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/vrfs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bcd1804d9f760990575aebe30a90449119bbf85eeab26827de160f871685c53",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/topology_fabric_links.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5985bd908e6b15f942cec3b52cd66d68ed82a1c12ed6884dceccf1701f49d7a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/topology_edge_connections.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9237f7fef93cc9103637b6d2f08fc9169ad164044e43b6d58ba4ad892f9080ec",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/underlay.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ef2196e28ed302e77e59dae2fee9b018a6ae827c84595122554d901c463c0fc3",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/networks.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6d9f94bad8f16d18da08cb856d92bf1d59b683c096ea54999af990fe1ab9951",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/global.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe16b00d7efbe1268eb0442b9318cd474af72b90617d681ed4d5616dfa9d6291",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/topology_vpc.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c09acb9fa53f8455cf25201a581a62e3a25264c902c21fba2369455edf772fc4",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/host_vars/examples/fabric_empty_example/topology_switches.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3cb9a30f4d64bc295bef5af91b9aaa8979b00f61b42e0e218fce2bee47d3d401",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/test_inventory_example.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2fa9b850e062f9d56b756bd9cbf025df067125f2c93ec4567b9b12ed1446a30",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.18.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ccde21dfb85954ebe7af73ee72263f36ee46c8924ebdf3565e7cf8ec65fccb8",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.17.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2257c0452cb5e1777274e6b4d74d5d188738b177a61f9355d898394133c379f",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.16.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2257c0452cb5e1777274e6b4d74d5d188738b177a61f9355d898394133c379f",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.14.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2257c0452cb5e1777274e6b4d74d5d188738b177a61f9355d898394133c379f",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.15.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2257c0452cb5e1777274e6b4d74d5d188738b177a61f9355d898394133c379f",
+   "format": 1
+  },
+  {
+   "name": "tests/config.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "71ff5426485cc74b3c360a0941dc40661ef17ffc8983435481f55f9f4143ae4f",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4351db426ee3dcbaa5674b78a22a0f3d6b8968b0e8ebf656e9fea6be886c9ad",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/tasks/manage_model_files_current.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c4d6841729e40dd2ac8ab509cc6ac1cae17a699036955d3f5ad163b96ed05a0",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/tasks/manage_model_files_previous.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "792d1fe5e330a43bb9f602668960e4b9035104d4a0e21e9831beb1c7d12ce5db",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/tasks/cleanup_model_files.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "399f7255ecf133d8511fca3ade714eca71ffc0826df53a4313ce16d7d51b32b1",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/tasks/sub_main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ea09ae89d69ceb7c074d9328d9ede7e96d378ab544a8d3ecc0180bfbb31a698",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bfbddb368c52ff9185ad4d1be1fb995b0f19a1011d79f39c4b8393b09749b457",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee869e67af35562f922898aaf7d1e53e908b3564b2b11d39773d905c5cc09c6c",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b46bd5d10f01c44a8fe201fef858590df33d31447c7897a716a9a272299d2d4e",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/defaults.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a9ed84d62e7eefe5281ea03bba8e2c42ffc79bc6ef12280563d54e1a65ce3c92",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/301_topology_switch_serial.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "13ca4c726c741f3764ef0598b58866387879ec76bb1e61888ff32d15da15f822",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/310_topology_switch_interface_breakouts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec47839b8c93be4066afa3107eaef4648ec5166737ab9af23578404b36de1168",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/302_topology_switch_management.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "33a845ac3c40c617fdf5ded0056b09136d16852ea3ed60b77629d9d78038dd91",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/304_topology_switch_interfaces_members_unique.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70d55deda7388a549a5ac9386c2cbfa1345f9902a495a5e27b25470dc7d8c5d7",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/303_topology_switch_role.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "723eee713f33dc353c9f8d317230a874218f5d686b4d38c0af6f2eeed0f6ed43",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/307_topology_switch_preprovision.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a521839e77119d7be18d9f8445fa7e9936471adb39c5a437a132e431add12748",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/204_global_bootstrap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d04de8eaee64cfb180749a7ce7b60c234dfd920bda4e3ac23a14d2d4b53b3e8a",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/501_policy_cross_reference.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57d411544ac9709dcd1f9cf9907b7937353399a80b290d0c7ee9eab9e33c5b3c",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/isn/308_topology_switch_duplex.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "56db2a6f101e1b6926fb9ca8e9a88c93b188f5310469f28bebb7c93dacc4644f",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ebgp_vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ebgp_vxlan/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common_vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common_vxlan/403_overlay_networks.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "274e62718869955236fdb1ff5fa8043ed0f0273f16de48dd987ed1d7d08c2546",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common_vxlan/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common_vxlan/401_overlay_cross_reference.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ae464cb28adf933993faaad81a03fccb1b8b8095aa8d7cd34a1dc74b82904b7",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common_vxlan/206_global_vnis_vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3711efa82463f175faaecec5c57a4474d65dcd4ea083db61a77421275d28173",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common_vxlan/402_overlay_vrfs.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "44161ef11205d1210d74afcb939a73ea2c5361019747caa48b38452fc63ce868",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/502_policy_vrf_lite_cross_reference.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "716d925c0e810403fede82be58f4779e87fe95677a7b48c07c7feab3824ba67e",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/207_global_replication.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "36bd3211a4cc6511ed60f26e54779318d8bd58977d8c56766ad225b1252e7a2e",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/203_global_underlay_isis.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f080927cab3d8bd38bd55b881ebaadfa439f95ec621ea13a8ac6c986d17d8f6",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/503_route_control_check_ipaddress.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "29d4ed5795218e8ab48053666b2ff396095f566710f22a442a9afd4e197098a3",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/205_underlay_ipv6.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eea49fccb426695d200f7fe8bd0c6ccbca292bb134dfb4cedf3f3f92de947f55",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/202_global_underlay_mcast_trm.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e77b168da0deb21e525a19ec36e0562705cb91bdcc93790828b8cb29230edbc",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/505_policy_route_control_route_map.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4755a83c9b013115203d158da1f0f5e292df58a711297e3f0a63098cdaddad5a",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/201_global_spanning_tree.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe77ed5c281c03ef8a8175fadf848b7a8116dce60d4e533e270b70ebb9ebda36",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/ibgp_vxlan/208_manual_ipaddress_allocation.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d6ec3e1ce98a8d5950e1ec0bb42da458bec5dc6f6336fbd90dc54f8255b5b859",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/306_topology_switch_vpc_peers.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dcd4c4560d27b579d8eab58cc8e8e2aed85d2bb4dbd3e7d85f72b8e2057be7cf",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/301_topology_switch_serial.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "13ca4c726c741f3764ef0598b58866387879ec76bb1e61888ff32d15da15f822",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/310_topology_switch_interface_breakouts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d48da3ccbd1702fa5b620baed439c8b8c197a6f424dbbddcfead842900c23dc1",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/305_topology_switch_interfaces_vpc.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ef12c2e303bed3e72e9c601d369e7fdb3bd1a71f8d9f4d4c2b1520925c2342f0",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/302_topology_switch_management.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "33a845ac3c40c617fdf5ded0056b09136d16852ea3ed60b77629d9d78038dd91",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/304_topology_switch_interfaces_members_unique.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70d55deda7388a549a5ac9386c2cbfa1345f9902a495a5e27b25470dc7d8c5d7",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/309_topology_switch_vpc_orphan.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "59d7b953ff28e6a40e9c6ea12ababc30c0a305ee1d694a6b8463bef0646842b1",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/200_global_bgp_asn.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e0e20c54ee08bbf6760dcc530a867ca40f372ee7700006ce7d451120a0fe073",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/303_topology_switch_role.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "723eee713f33dc353c9f8d317230a874218f5d686b4d38c0af6f2eeed0f6ed43",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/307_topology_switch_preprovision.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a521839e77119d7be18d9f8445fa7e9936471adb39c5a437a132e431add12748",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/204_global_bootstrap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e46b305e4debb1c1220cfa17beff14272dacdb58bb18014491824efa6552cbae",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/501_policy_cross_reference.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2992621fd4b9ad31b5aa4ab6b81dd4f18c6dedd94cf4b9f57d2ac5f791dd13b5",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/common/308_topology_switch_duplex.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8c391daa5c75702b6149e3c711f8b601106aa70b61e033a01b8e2649fb1576e",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/external",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/external/502_policy_vrf_lite_cross_reference.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "271bfbeeb108cd4909cbe0d13730e8d3ef0ec6b4cacf4cff879e3aeba72b502f",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/external/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/external/503_route_control_check_ipaddress.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "29d4ed5795218e8ab48053666b2ff396095f566710f22a442a9afd4e197098a3",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/external/311_topology_switch_vpc_peerlink_consistency.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a4d852c03d3a19f8cbb11ed48fb4baa0481a2db9f460db1b083faa314eec0719",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/external/505_policy_route_control_route_map.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8dcff8b933dd284941a137c222a494c07174a0194dd18c57752711f43f98eed9",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite/201_overlay_cross_reference.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a615f0b948ce0403998a23ced3396b89f744a5d1af6b5a94580a8a7af31b381d",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite/205_multisite_vnis_vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8a2559131e711e4dab356df5201fe13bdf4f5cd5003bc907f475bd7ba577afc",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite/204_overlay_networks.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5a96220d5830f3a155663bf87a0a72ee2d7d1daa70421d7d5f746edff46d36f5",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite/203_overlay_vrfs.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2dc8c2a57b5c71d9b9fb299299a772dc7383580de01cdbe2b6d43a10556414d7",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite/001_supported_via_child_fabric.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "22da09caf80bfe60074da5fbedf448f6a0a541613999af76b000999dd895663d",
+   "format": 1
+  },
+  {
+   "name": "roles/validate/files/rules/multisite/202_overlay_child_fabric_cross_reference.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ceecca6ef88cf4de6da46464e725d82d911316ada73fab669947e7168b5ba28e",
+   "format": 1
+  },
+  {
+   "name": "roles/common_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c651de1958ff070eefcc1cc2fa5e29bb6c59c8e307c2bad0ca4c77a22a8c28f",
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c1a72ae9ce5dbeeb297b5147da40d689e5ab42ed6299f323dab7fbdc16708de0",
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ce654a81725a506e850bd4e017865072f0d79a31031c3bcbed0dad48450ad11",
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e02365b150209fbf3b4088a03a372bafbedf834a5eb2f3438b3bc760322baa9",
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/common_global/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6286e5abd4ecbd389345f984f143c45a12536f90e0b8eff8e50d9195a8298a4",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/sub_main_msd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb2c98eb539aeac6e45a4b89d50f91aab520588c59cebf35b6fcedc9f3c48292",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/isn",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/isn/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common_vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common_vxlan/networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c20d3f6c02d0f54c19caf3367729bf6b25f751efcba3ffa74d1ede908c6630d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common_vxlan/vrfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "30d74197ef6aa2028ede41e32e1e9f9f689a46564c9ececf75ccf5128fc78fb2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/vxlan/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/sub_main_mcfg.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "45659cd62cb1398006d0649dcddd127093cf62bf1ba2205271efb45b4bb65334",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common/links.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "20f5c5234bd4c6efdd9829d20bea501b2dd4b59dc5395d944c3374d75ccfe780",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common/interfaces.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98bfb081367de20d71350d0ea1b0394e97a4371bfd8986bf746834f8b4462cf3",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common/edge_connections.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed5bd1efe42498eb374c1c1dcde37868876e7936d54866ddc138b5dae582f843",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common/switches.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a94e5f3a1111dad83e00db27d1708037bd58e40032c6880f86a5924ccec1635f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common/vpc_peers.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "59a04d6dfefa9d3c68bd096d63ecb4eaa016b440068bb3a9f58e8e45b3dfbab9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/common/policy.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09ce4f55e0ada29cbb4a707e6ddb3cd3f28bc4c7c0c44c3e3f40e4f37e9f68c6",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/sub_main_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "055bd16ba3961ebb92b051904e7d799f3fdbc18dea6bb2830e3346b64574b502",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/msd",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/msd/child_fabrics.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9b156376beb0ec9b5bea19b8e8064d201bb0797fd898b7d60cf94faded5529a5",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/msd/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/msd/networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e070eba12f47a36a35d4c1b7a11acd6244a6a833091fd5fd8a940fac938c17e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/msd/vrfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a61445058800c49e49248e8eaa8bd5c3bb58e324579ebed6e6c5b60645f42ee",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/mcfg",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/mcfg/child_fabrics.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0c122433d8f9d7e73295cb9a460e2dde89febcd923b79e70381dcf58ad6827a3",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/mcfg/networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b393837d30643d2d68b13bac640850bf0df6ff3c30cbdfcfb5d8ca06b7e1bf3",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/mcfg/vrfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "579e0caf1c39f1b3e638f6aba86faabbeee35b26d00d67a79371fba207d3fcc9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/sub_main_external.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d555209b8e9665766bd82d3d94184e841a288a1e12a6e867790a816423f95135",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/sub_main_isn.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "33e48d9949a7d431a671d3b13a19f091beaf1d6aebeeb0ea3fc60031f4c55d6b",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "86dc27f1b23892ad30c91d3212c58eee923a20f474b24e1224e66fe6d82c5a35",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/tasks/sub_main_ebgp_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d300b1a9ce0d71afccecf7ebcea9de6df10c5aa7f00df70463d6c8121efcf461",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b95d5e4ce4182361b091fd0e853254d69b0f4b7bd62f47ff6b34781175df90f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/remove/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81648076c8cce9f570f16c53d70a3189969ad453743fd6668d10a9cf7c5b25b9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check/tasks/verify_ndfc_connectivity.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2764d6336d54a3f5c394dd19c9cf6fe7f52888bb19a22c10d7ebc395b46ab03f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check/tasks/verify_ndfc_authorization.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de669323442c9ac8b13fe73d8a3e20a028e4a43a09479153665dad1568a31274",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "02627859187e40b4a37cd9c4edb587d588303d8adf55884f1d7c28d2bf9156a1",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "67fa37483fefa0faf0bb690fe23692214fee68970aa3dcb8482cfdfa4dea2c24",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/connectivity_check/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe289d28761ae7ea8e7ede99957a690991ce39d723113b5ac7b5b16289e96b74",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks/sub_main_msd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c6b27f38306833700ae4d191f8387187248f92723a0efbc7b7b8b422f4e7e972",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks/sub_main_mcfg.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "47afeb67f7f515c3db9800ab7dcff134a76c40595541cc4b2159290ccc5927d8",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks/sub_main_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f8c428b729b4c7e72524db13520372b892bb59c5c2b73322190d228ce5155b0",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks/sub_main_external.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dadbf8f28261aaa88b9ae33c7c79afbadb9459949c2f4d22494882ab22c8a347",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks/sub_main_isn.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99d26ebf0cc933b60be24df67fd26cad74cb0bc6aff2f7166eb56af6a447922c",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "369a49341410938b12265df232b80f848d5349fc722f4561bda67699f05ff9fe",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/tasks/sub_main_ebgp_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a4e17d6b14292d7c5730f3639f6ca905b5ef4b0197b3e6624c1c154cb1f63fc5",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5c3c4e637c9da6b0e357adb89fecbb2e5347dc5da8465a4f9630ab4560ae017",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/deploy/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2607a4efcc0b7c5ce9ad55ccb3d0d1f7b88aa20384b7d4c098546a510ec30c71",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/sub_main_msd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e08f6fe06912ae422e5c56b45e8eb9ae999c154f7674a50bf798020320ebeab8",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/isn",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/isn/task_file_placeholder.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "458b8f1ef44c64011cc6605461384ab536843a8e698b6cf35e5f6e2d93c1defd",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/vxlan/ndfc_vrfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b155c299131560dcab574c0716509d39e171dd708e4218bf1fa8867328ddeb8a",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/vxlan/ndfc_networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "384a9ae0baceeb07a666d7d475c3002c2ffabf973e2862ff5d4606eee1f862a7",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/cleanup_files.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e39b40790cd3f3b970e7102b5568a382420eb4961ff22d4185fdb405d77ed24",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/sub_main_mcfg.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f82204bb1daa12f12786cf8ffc36c9bcbe18e0a3f73e6228159dfbecea43570d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37a5de16e34ec3a33aaa0d858be9ead2033dd0af82a71530e820e7fd8f018f53",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_vpc_domain_id_resource.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c434b6c22b7c646d208d1e3d56bcaa3c09c6c807719b7a3cd4a5386665b8717c",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_vpc_fabric_peering_links.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b47a98233d5861a7a37635d914d850f89def0eb40cd1a2a278629f15b951cc4f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_inventory.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "560865f8279d5a1f799639b73b0823ddfeaea5b4752ddc6115567d0e3ecc51cd",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_underlay_ip_address.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "733787195f016a919815f6d644bd0ce5377bef7d4c26e57def109eea1d7e42fd",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_breakout.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b81ad7ebb060ae7e8b33c275aeec35bcfce5d6680a1c2695b9418d15c9cbfe3",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_routed.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b798d852d6f7e8bac320e5d6ee7b14c3e9901729d9aa54a41ea47f742631293e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_po_routed.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d1fde9b6eeb399b3a215ff09a279c3ef74d8bf51579edb9ea89915bce43cfc8d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae2bc35edb2ea2f7621f79ab597c6af5d96401b39a834c26f828a59affcdfb7c",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_fabric_links.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3f2e2651e671499a619dfb7ca242da9dae26194f11d0e3ae4326c81fa839884",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_policy.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "291b79528686e324f95e0c5a5f791240543daba6d6aed12aba3b22899a92a5b3",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_trunk_po.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9de86ee18cf617dc9eba1e0ed239bfe68711b683ca9fcc67af8dc0eb981ef856",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_dot1q.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d62d456205285f69e211ed8296afe8179c45170979582ac39008f4149690a51",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_sub_interface_routed.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f30a79b2f88d547d1f4a0ade4e36ee3edac7aae71e61a7835e5449ecf3368e2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_trunk.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c9b75ed09d20758ada3c977e23354d1b333e36fa4199e27cd0ccf4b46156493",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_loopback.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e741205157681e9ec0b69e312794a25732aca138faca36e9e59b2b6b0406c0ce",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_edge_connections.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9de0f706d83faadc5a13ab52606a7499177585aeb386403c7c4032e0d685f61d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_inventory_no_bootstrap.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9406ebfea7cb7559c1ff6eed75dfd8a7143cb98771caef5e01cfb909533dc983",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_vpc.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "879d7648053a47f997089ce04de2040bc2ca220fac88bfb9e3f19e1abc3d2fdc",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_vpc_peering_pairs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dc2f77ce228893d97a7cee0db194aaa17d630a799565ffe44add9e316de51760",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_breakout_preprov.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "744b2fe9dd4a4fe8bc9cd6fbb072a6aca173d474a8cc3a47525e4b3549badbae",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_access_po.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f17d983ba4063b4445e54df81dd0b8275f8ad92b9581c9280aab31fe3f835310",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/common/ndfc_interface_access.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37cc768658d46ff0b897f514b7cd758c49a2ddfb97bba6ca9d7cd793913dfa51",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/sub_main_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d8274939d2c975914fbb4d10966c7b80ca0679cf379f63802feca93e35478c0",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/msd",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/msd/ndfc_fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3264f3b12eca6767ecf309a63461c7fa7c358f28a049379bd1dcddb8a412cd87",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/msd/ndfc_vrfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aa57b32e6f16b1066cc5eb52746440b82558b702b244b87e8fcf79c96cb185a6",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/msd/ndfc_networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fdfacfdbfb3ff07bb83e8c0d6cd4bea68c7c52d65d609caac4a595dca9f4270e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/msd/ndfc_bgw_anycast_vip.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b9ad9fe16e248acb39f4e20c376b27ff306e4fe36fab86ba7ec22297d1ae57a",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/msd/ndfc_child_fabrics.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "272b88da0128d007b068a80dbedfcccbd733be393c3c4f3142a919ddd7db57d7",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/external",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/external/ndfc_vpc_peering_pairs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f4980b4b184625b6446cbb2a12209ced9599bb30f433dc79f6eb18a866c2444e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/mcfg",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/mcfg/ndfc_fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37761b95a8cc2c995e660dd57759d5db9fe6407331cc96e92bc08e4c512b788d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/mcfg/ndfc_vrfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "085b57f24509c7b72fade71d04ae40311f6ab8d7df241430d4588978381f4e93",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/mcfg/ndfc_networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9264c9b10731f63f858553fa7ab7eada2d75e0d23bb5e46764b5dfcdd2bd991d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/mcfg/ndfc_child_fabrics.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d2e161a9ec5a30fca4292c363805d8368cb2cf08a2e94dd0fb4bf40e4986efea",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/sub_main_external.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b56da650b46a299a85212eac24d4767febbe7fda4bbd733db73f077572db719a",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/sub_main_isn.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb0045903c40e3f6f641733eaff2870265a3fa5a6de9c6c3e409d2ddab9ab327",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed52cacc6ec441e1100a7f5ebbc4ec1f0daff2d46f1b4ebff40ae0d52d600a69",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/tasks/sub_main_ebgp_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0835ef1a33dd40454128ea889c826075fb11e76389aba2f0d50df728cb9cfc1",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c16c2bcd9bd9c7015410c793cc6e06a358324e0333eb7c47a22b80f73c2688e8",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c200444231cb55f2846baebcc9accb369fd7ca0db1306eac7611a84fbbf3cfa",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/mcfg_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/mcfg_fabric/mcfg_fabric_networks.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b5d6e6d8309d0bb1d265d81333cdb92b7d08811bfb74009e2b3bed6524e6c37",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/msd_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/msd_fabric/msd_fabric_networks.j2.orig",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "20c877926b7e28278bc68460f7304b3a288c2e0efe77574af49c1f9db0e05caa",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/msd_fabric/msd_fabric_networks.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64a42f7486e60cb9d28f871ecbf0e6f9bbc12655f84aabae1eef18cb906cdba6",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/dc_vxlan_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_networks/dc_vxlan_fabric/dc_vxlan_fabric_networks.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d9a08b098be6012c32ff3a6f6ecd09c12072ed21421c22795326c3480324fc6",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_object_groups.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db69d158e5c090e66340ef681b8d583c1c0502a3c374f9dc2350f28aa3ecdbe0",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_mac_list.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "549f065ba4ed81c95d9afb16422c3bf93e3b653105bdf47d4032bb5629f105e2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_route_map.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe32af7d4c92bf48cac6b9e25c4eee3e25406cd9b29215ea3929407ce6d84963",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_community_list.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e8fa8773a0a7edde1b230701709024ad0eeca84bfbed2d88d6946ce2b8c43d17",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_time_range.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ce1c2de017ee2326890363d47ac3f50622c6476b20b286a49173b518f97c917",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/route_map",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/route_map/ndfc_route_control_route_map_set.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "741695b9a2668d69501db3685d9a2c9925113cfcab31d6ec8fd9ea0888a24f9a",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/route_map/ndfc_route_control_route_map_match.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83cd63b84026f940a1268e4b3314bbdd3fcaaff2cc26af901503088cbbd2d6ea",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_ip_as_path_access_lists.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e589465f1d02513cc4aa2797c4a22b1f087b75233850858b6c4fb4ff67dbf155",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_prefix_list.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d49c3f586648ec7f9d88e4802e68e04ec52e38f22ceadfe7798dc1e54720e7b2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/access_list",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/access_list/ndfc_route_control_access_list_ipv4.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0130c55bff8b7790e3cea440830ea076ba8e67c10c0f570c06e6e51268cbb00",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/access_list/ndfc_route_control_access_list_ipv6.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8f7c5935a7e7403aef725e14f36818354e81a2505a9b75600204655e6bd4ffe",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control/ndfc_ip_access_list.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df423b0ecb4a4a3911f5303c9fe1dd41aeb20bf78f1fd39675bda049c6f07d98",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "89c104a236d2077be836095fef837f77ed73998b6e8315e8baa2cafa74c044a0",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/isn_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/isn_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/isn_fabric/isn_fabric_inventory.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f5cdda0fe02d5d01dff62a665ad4cb70fe9cc73ac43b63a9cb2370b5c25b68cd",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/isn_fabric/isn_fabric_inventory_no_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7531f31f8c716e68fe517a212c21123cc4e63b080985b7bb46de9b24f77fbf7",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/common/fabric_inventory_no_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e38ff31dff68ef8da891c7103b9b22bb020c3e40f8e0099c164ae41aab5a650",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/common/fabric_inventory.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fcda5bddbdeff2f2e120fab674c541115499a2c59f574ac2da1330afdc688dba",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/dc_external_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/dc_external_fabric/dc_external_fabric_inventory_no_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7bd4db306075627cdd8e843599e326d4f974ef2f2bf1ec65243a97aba7b30e61",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/dc_external_fabric/dc_external_fabric_inventory.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ba815bd1fa8ec129799d7f2bc3b7015e6dfd617909c10ebbf21ab109065822a",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/dc_vxlan_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory/dc_vxlan_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_policy.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eecd54dbad606478f9de8359fb14f4d480e840754368c33b09818274875898a5",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_attach_networks.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a337255f2787e8eba04d18aab30b528ba6ce9f25f4bd383d777eb8f7610fb35",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrf_lite",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrf_lite/ndfc_vrf_lite_ebgp.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d28f247d201f3d848be37319f46688a64b60a7a0d34a3c7b56d83da2e3602d29",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrf_lite/ndfc_vrf_lite_static.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dde5235ee6363f9ac943a203a2b87bd926de11370497acee1f42782a60ca7fd2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrf_lite/ndfc_vrf_lite_ospf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "639bc79312802878a93d18c50f54da1e41ddede9ed12a1ee35aa10ec9194def0",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fce98a82f152cb6568ac58f41077b38f033b1073d2c4ef1f7c87ce296e4c5b6e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_edge_connections.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "93949ee0831967d39970bffd5086c8adf7c1416444da598588715d52cfeae6e7",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric_links.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "676d5841ed1a9c9f6c6164f937bee980da185539d8e98819cd1a776ebb00c043",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/macros",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/macros/convert_ranges.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b457749663cc6e9b7b5a474cd71054d6f3e29f432b680ea9327879d73d139b1f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_route_control.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e89dc07374e42afc2679a25d8363013f99d24dccf56a44d229234625b5a3c41e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_sub_interface_routed.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eb661db4e97b94b709898f643b74ea619462ea818a43916b810d62c1d514d69e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_ethernet.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34d2ded6cfd375b171331ae77a3ff6b0e9baa43413cd7a22baa782a37f50c7c4",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_access.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "289faeaeca58d4c832bc9ed57d09cd136ca205d2790d787dad4692b5c637a3f8",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_vpc.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "46245bee8c81af330ddfb48799a49ca334889a31bbaec013733987af9156afc4",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_access_po.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4272914c446d43af595df498b178f78730013a84ca582ef9f931d0fd76d3b755",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_po_routed.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f32554a098f4fa167f7e2730e588b83c981fd112c60bbe102dcdad030bf12e5e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_loopback_interfaces.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82158f645a6fb27621051864f97ad6199473ad3cfa387718d8f07ae869999d0d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_breakout.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c3332c1ad137331912065007634d2811c9a953a24498bd3b2edd0d8c41d01b43",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_trunk_po.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a332a52489370288a88c8eaacbb5462c70ae6fe39508fcb0c37c4398918e3690",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_trunk.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a9bda1aba004289ebbedd24a00c11aa089a0736648a3fc12a920aa4134a691c9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_breakout_preprov.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f950f003bf322953f9fb1795380aa9f68df4eee444e399433642bd0f69b4013",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_dot1q.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00ee4782f5b1d586c59aac3cf4b655ae2bc55e453c239cfe0fdf64d3cda12e3a",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_interfaces/ndfc_interface_routed.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ee446ec141878d1526c3b4dadbd7ffbae4796a45994149b81426c03b3c05dff",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_bgw_anycast_vip.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed62dbfd5b05c45c2785d49b4365d1b70bbb5143fc3560aa2b6e9b064802e4ee",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vpc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vpc/ndfc_vpc_peering_pairs.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c46cf1b0105c77179c59cebb56746176f6102f71e59120e476c0bf11948d0ac",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vpc/ndfc_vpc_fabric_peering_links.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e9114cbea2177772f7462f70ec9e7e6a1b833fa87e1c91ef1123ea1f8e0bdf2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vpc/ndfc_vpc_domain_id_resource.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2d51be5ff707cab7d3cb010d3a0fb92a7b05af6050373530d83014ff76c28c6",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vpc/ndfc_vpc_peering_pairs_external.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "687229e88a0895f12023c1ec7e114ee1be7d202464180bbf851552f0f5ed20cc",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_underlay_ip_address.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da698ca28af3471385e3e5ed001defbd115847a38d571512b595103e474d556b",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/advanced",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/advanced/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/advanced/ebgp_vxlan_fabric_advanced.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fb3092360cde00e1ccd40f49c3ee17e59eb702a1368041b389c50b38a65e6aee",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/ebgp_vxlan_fabric_base.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6600bb41cda168b88cc2c386f23e71828985e2fc2df531802cfcc9c1dc9a9e16",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/bootstrap",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/bootstrap/ebgp_vxlan_fabric_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fff81ec8f7a68d2c2606d60c9032348bf6ae1cf24e4e2f33797adabb4fc5457",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/bootstrap/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/security",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/security/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/security/ebgp_vxlan_fabric_security.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9232d2cd2213c001c72794dd1aec91de5b81cf99d3340b8d621d72dd93709755",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/general",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/general/ebgp_vxlan_fabric_general.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9aa631d9d174db7d7fd19f37bfddd01efa923ec3fa530c1df0db28082d9e1c3c",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/general/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/evpn",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/evpn/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/evpn/ebgp_vxlan_fabric_evpn.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "057a6916088c4f0cb3951ae43f2d57336a3f005a626e8300564e449ceb4ad4ee",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/manageability",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/manageability/ebgp_vxlan_fabric_manageability.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e46157cf3ab2e14feedd77a4ca8c223d6ffd9581a23d4cba5170f71a43499a56",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/manageability/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/flow_monitor",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/flow_monitor/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/flow_monitor/ebgp_vxlan_fabric_flow_monitor.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dd30dec78fc799f258b85359f77145431acc94f9c140ce7fc1b7dba1d263fd08",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/vpc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/vpc/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/vpc/ebgp_vxlan_fabric_vpc.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a5eb4b1d6c58743de25493153e421b7fa02f78875fafad09c4dae13ee1e417c0",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/config_backup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/config_backup/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/protocols",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/protocols/ebgp_vxlan_fabric_protocols.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f00f01a5afc68bd75c4024b8801ab0963952268f6a275ac554c74c89e9babec2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/ebgp_vxlan_fabric/protocols/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/advanced",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/advanced/isn_fabric_advanced.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bf7a8d980f6dcd3fb62caf0bd88678f0e41f6b20144779d9ca568b562463d3a2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/advanced/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/bootstrap",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/bootstrap/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/bootstrap/isn_fabric_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0daac0964dcb24ec8b277f519e54094eef850fa90c9e9e18deb0e8699a02bfe6",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/general",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/general/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/general/isn_fabric_general.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6014969479dd77741d3e5c3b64988bad4751fc9aa5612c9a40c995e588bbdcc9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/resources",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/resources/isn_fabric_resources.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b682b056ec65b9ead168fcc8199b9fef3c1faa4d8729f583b314daa38eb6878",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/resources/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/isn_fabric_base.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "997958224044454e03d179ee0e8a995183d4383ceedbfdbe122c826765bca5c9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/flow_monitor",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/flow_monitor/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/isn_fabric/flow_monitor/isn_fabric_flow_monitor.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd369766ccab57e4a8adece07c6baea84c4d185d7577485d46ed6a64f7ebcc21",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/security",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/security/mcfg_fabric_security.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eae5fb2c9f62b7045b574ab417dfbbe207a2b628955c410e6a6b5e255b3097c8",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/security/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/general",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/general/mcfg_fabric_general.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e978930d3bd2ce3fb4412fa1a8a234a1f3e23fdbeddbaf3202ce6836925e1a8b",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/general/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/resources",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/resources/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/resources/mcfg_fabric_resources.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d69546ea9e84e0d4d6d543e578690670ae407d1a0297e2e0fd79d2ab21a9a99a",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/dci",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/dci/mcfg_fabric_dci.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c043f20232618c5c61b937e40dae1165e583b88b5c49017a27ec39b5cfd9cb47",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/dci/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/mcfg_fabric/mcfg_fabric_base.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dd0c135e5f095941983be64b181ceb63bd873698132f54eaf0f3eff55a005345",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/security",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/security/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/security/msd_fabric_security.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b2af138b568e4703c87f80f5b86d17edefec256956392a6fde688d72723a245f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/general",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/general/msd_fabric_general.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "02595e49be534aa663d0d7b1d41e9e4c465219d30a47345ec9da6609b29100b9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/general/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/resources",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/resources/msd_fabric_resources.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d8ef78521c3a6614d14e0a2be6bf9e4b7d2fc16cb10631cc53caab7f63d44fd0",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/resources/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/dci",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/dci/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/dci/msd_fabric_dci.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d9e75067de084e21b18a4bdaa35e7c01c115913836d941284dd844577d60a465",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/msd_fabric/msd_fabric_base.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c914c3bc0fd267353d9205f8e6514dcb8ab69f22f6b36fa75d4f7a890b66aa49",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/advanced",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/advanced/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/advanced/dc_external_fabric_advanced.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b95e38d17c8e0e875a5e794b16d09d831620603185e8c0451cf9bf7e1e00ee30",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/bootstrap",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/bootstrap/dc_external_fabric_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0d29ab5f8e5a8f6a70c19bb486343ad93a8df20069facdbcf5adb520086d8a9b",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/bootstrap/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/dc_external_fabric_base.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03fef8e6ecdc07d382d3770169d0ab10f12f3494320136b42ef46d432e8af595",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/general",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/general/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/general/dc_external_fabric_general.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a3c5a842d5fe28e5ca97caf82cd5a3f8019621f1ed27a7f03e2eef082ad19fc7",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/resources",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/resources/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/resources/dc_external_fabric_resources.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "62c7eb9b25a818c45f42369bed3fd48f37bffc0dcb797267abcea70cc5a35356",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/flow_monitor",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/flow_monitor/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/flow_monitor/dc_external_fabric_flow_monitor.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5733f7a1ce936645836cb82b757cc1d019c2bc9c01250bdf91d14e91a34ac56f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/config_backup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_external_fabric/config_backup/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/advanced",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/advanced/dc_vxlan_fabric_advanced.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f79048a2be2ef6a8f09736224543e1c783724eef4222db607e1bcdae46d967b",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/advanced/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/bootstrap",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/bootstrap/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/bootstrap/dc_vxlan_fabric_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2f3e9a43aaeaba93ef4a53084ae1598669e51f3de2b3428f4937b1b2699c641",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/security",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/security/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/security/dc_vxlan_fabric_security.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd727a3ccff03f68308eed35da1b42ac695bc663852db5274b11316e7f8b2751",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/general",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/general/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/general/dc_vxlan_fabric_general.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c341820f200c5c32a8e327128ca81840c06b52c571a7ba0b014a0a543d402dac",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/resources",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/resources/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/resources/dc_vxlan_fabric_resources.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "452e22756e0ae9f1f01a6d5c334f0f116696a69974a13740d830f29908509931",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/dc_vxlan_fabric_base.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "642151d4c68c98bf9d7593fb8b42171496b907c13c0f016fc491eeb00b3d212c",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/manageability",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/manageability/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/manageability/dc_vxlan_fabric_manageability.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "703be3f5a1e147eaa90898ba4bbfe76ff835401cc25c694e3150b1a90e9586be",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/replication",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/replication/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/replication/dc_vxlan_fabric_replication.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdf7275df39f7dbb6681d19e81e660478d1ace634778df6ee7fe3ae8eaaa93ea",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/flow_monitor",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/flow_monitor/dc_vxlan_fabric_flow_monitor.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "800a7eebd99ec965ccef7a528e01349fab264b3e9ed8d655231e03a384a06342",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/flow_monitor/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/vpc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/vpc/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/vpc/dc_vxlan_fabric_vpc.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ff8a3ea10aef2bf3de5de91a732825f638b6b6452d49808ea1ce46bad4188b8",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/config_backup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/config_backup/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/protocols",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/protocols/dc_vxlan_fabric_protocols.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6ece13b94c0d689bd83d9e4884057e285027eb319cb2b99439a6f7b2d339df15",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_fabric/dc_vxlan_fabric/protocols/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_attach_vrfs.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73e7f65cbcff8b1099fa8b47070c5403a9acfb6bdf351a12319d0f50c838ad41",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/mcfg_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/mcfg_fabric/mcfg_fabric_attach_vrfs_loopbacks.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f526aacdebb552e9f8fe3d38ae21c5c18c21b40e9b34ec34a80e43c716eec0e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/mcfg_fabric/mcfg_fabric_vrfs.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a8852280cc1bb452453dd3d823323e715f9f004d99b714bdb8e4ca1d0c12839",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/msd_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/msd_fabric/msd_fabric_vrfs.j2.orig",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f9f1f9762938138246fd85e40f32546cd0761283e5dad235d96ed7b86001f09",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/msd_fabric/msd_fabric_attach_vrfs_loopbacks.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bdc62e286d57fc2e66d1cddc72550a1f12368c4d6281706fb924ff80e4b201e4",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/msd_fabric/msd_fabric_vrfs.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cbb67f1112e63a83402db7b9b6efdd5b3ad9d74ab12c0fc0fb940e92847f7415",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/dc_vxlan_fabric",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/dc_vxlan_fabric/dc_vxlan_fabric_vrfs.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f87f35799b45ad42bac89712adae12cc711582dd70e38225fd89d295cf990eb7",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrfs/dc_vxlan_fabric/dc_vxlan_fabric_attach_vrfs_loopbacks.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e658fc420e4b07718ac0668170c13322b1b5a6bfabaf2f4693ed625dc2e5f196",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_vrf_lite.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e84b1f66ef6550864af3428476ad0f96c4e0ab2077c7d2bb12d60447df2d964e",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/common/templates/ndfc_inventory_no_bootstrap.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c4cffc975ab50e2298914f02d6dd7896f7a3113a030614d97ab20963cfed8e4",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/sub_main_msd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d774b694c5e403ebfa60ff6978df2f08a705de0cd25bcabae80891ac23c13f17",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/isn",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/isn/fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "533e00db1b2db8fa1ada0548080e85feb69fc4d91f837687a2be9f1d782a8f13",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/ebgp_vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/ebgp_vxlan/fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a414adc878cc7470182d0f46c6d9d110eda4a9ddca47cb8f987caa49b0f25dec",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common_vxlan",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common_vxlan/vrfs_networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27224390bcf0288486c1f5500e2a8ce1e2d7d8283f2ae1e4386c220506b6cbae",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/sub_main_mcfg.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f264514c66478d7e0c3bc655729655a526054216fc87796996d606a61e6bfdb3",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/links.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6fe8b10cbf4be24a296725c331e8836dff3314157979d02f4913e5577152f8b",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/interfaces.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c9b63c0e75afac38bac0d8074fc5fc099bcc2885c5b75d5026455f9960a025f",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/vpc_peering.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5db781f6da7c17517f0cda18b786e5e45a04104e8cb0bdf1a9708c8201fa658c",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0fd0a2fa9def6fa683d64ec0549966c46120589808ed13e97810b7f0d85ccb0b",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/devices.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "238132a5491e088484fb2d2e71ae745e81aad3a0f12ed54448425ea702aeca06",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/edge_connections.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "065c1427b9cf3efb257183bcfff558d0b124f74261a7b8620c95b14ca06d99ed",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/policies.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c4a4ee6dbf4f6cf213d07fb3c0831e97bc96ac8a46f785329e62f1b2b851381d",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/common/devices_discovery.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "20e4e1592d556218b3eab44d442a2892b75100fafcaa7a40df233633990464f8",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/sub_main_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab41500e48a65098dae3d5f45809f6eb889d6828988d79f929d974d2d6fecf12",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/msd",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/msd/child_fabrics.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eafad39ced83622cd8631b6ea7f61c5171c35a0b7c94882b3c75a04035733af4",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/msd/vrfs_networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "659b2f2728204dcf555fb2df99f4ba8597d02d72f3f1c10b79e0c6d9ce6f5ad4",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/external",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/external/fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eb2877129eadfface21f7ef3b1d134938f46a362ed5ad57325a0aae89c699fe1",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/mcfg",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/mcfg/child_fabrics.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5014721c28e403d5b5a4b7552061cc08f13725f86ccd7dddacc890026aea613",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/mcfg/fabric.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b4913fed8f0d808390c969041e2ac449426ad6600150664c54b51b5898adbdd1",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/mcfg/vrfs_networks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd6e1f967607362035151044a447f8fb513c8109cc19e433cf9f5f1c94438670",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/sub_main_external.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a42dfa21ad2b08248c21318a6b311049fbb5a1ac4b005dc19a755ac5d54312f2",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/sub_main_isn.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41a6f962769565078e2e1fc8e1f3b2e084ad1946978ce4f53df8bf606d7619d9",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea5a915a6c7eeaa532d54ee6037def7992d88385a4eb24ceed947644e04ea9a5",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/tasks/sub_main_ebgp_vxlan.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6964a5fdf4afaae15c054ba6cfc094ab14363b43da7535ed71a74094fa004e9c",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14e677989665f633cc517c311101486f921e7f89d81cbee0cbcc42e3010c7bd1",
+   "format": 1
+  },
+  {
+   "name": "roles/dtc/create/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b87de2ffa5a5582bf43136b632df95f31edf824c710beac4bfa651cfab5d2bb7",
+   "format": 1
+  },
+  {
+   "name": "docs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/maintainers.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "11f8242aa566f0bded5a99bfe4a8b7a27e769169a0da031717e5c71259d42c52",
+   "format": 1
+  },
+  {
+   "name": "docs/SWITCH_DISCOVERY_CREDENTIALS_GUIDE.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8aa04d42a7cad8672316f8be55ab2b8106353962e80092f44ae0ac99f5c94ddb",
+   "format": 1
+  },
+  {
+   "name": "docs/SWITCH_CREDENTIALS_GUIDE.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d0415c06b5d573f15cd15fdc02ee0c3f8d972391e42719faee7ed364a9d3dcac",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b0733aac4d105a873d79761c8e3a2d66536fe505bb8e31da7e7b06da1ce72752",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d9161b8ac9b1f2339f8cc4b1f93e30f178a8f8ccbe7bc8d61f353df0d74be781",
+   "format": 1
+  },
+  {
+   "name": "CONTRIBUTING.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cfc0174db337ac14cc3b13234aa21e79c48398b9641fbcf04b23f81cc8e2e367",
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/CODEOWNERS",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ef63a15bfdbbf5667bb8848b200549086abdb6098ce31cb513800703af29f76",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd40e70b8d2b76c6bc60a36bfd6db275f0c8222e6224a27d11a76cef464c4def",
+   "format": 1
+  },
+  {
+   "name": ".github/pull_request_template.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14c198347e328318726ec9bcbcf01d2afbc1ebf9c34289fce5da6b9eefdeb808",
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE/feature_request.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "278cee3ee790083254121916f8f4f1de042e3e0c1cb2ae2691024b7f2ed7af96",
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE/bug_report.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b978de0eacbb954fab347a3c49918c7371a81f1134c3a54d0ac6fc675f6c715",
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE/documentation_report.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25eae6234cc7efc96f6338f36fcf5eb9a10143e00b50f2fba1847ba055657bee",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57879b33f6eaaacba6dce2144bbe7e4a2ed62532188c18afed0770a214fcb213",
+   "format": 1
+  },
+  {
+   "name": "SECURITY.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "055d1154d90c7f5f4bd32eec1215f6f1d3ef5fee60dd800a7868938b072db54a",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

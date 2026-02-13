@@ -1,0 +1,16 @@
+---
+# Connection Parameters for 'nd' inventory group
+#
+# Controller Credentials
+ansible_connection: ansible.netcommon.httpapi
+ansible_network_os: cisco.dcnm.dcnm
+ansible_httpapi_port: 443
+ansible_httpapi_use_ssl: true
+ansible_httpapi_validate_certs: false
+# ansible_httpapi_login_domain: local
+# ND API Credentials
+ansible_user: "{{ lookup('ansible.builtin.env', 'ND_USERNAME') }}"
+ansible_password: "{{ lookup('ansible.builtin.env', 'ND_PASSWORD') }}"
+# Credentials for devices in Inventory
+ndfc_switch_username: "{{ lookup('ansible.builtin.env', 'NDFC_SW_USERNAME') }}"
+ndfc_switch_password: "{{ lookup('ansible.builtin.env', 'NDFC_SW_PASSWORD') }}"

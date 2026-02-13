@@ -1,0 +1,56 @@
+{
+ "collection_info": {
+  "namespace": "cisco",
+  "name": "nac_dc_vxlan",
+  "version": "0.6.0",
+  "authors": [
+   "Devendra Gupta <devegupt>",
+   "Jesus Casero Diaz-Cano <JesusCaseroDiazCano>",
+   "Justin Burnette <juburnet>",
+   "Matt Tarkington <mtarking>",
+   "Mike Wiebe <mikewiebe>",
+   "Rafael Muller <rmuller>",
+   "Rameez Rahim <rrahimm>",
+   "Shangxin Du <shdu>",
+   "Udit Mehrotra <udmehrot>",
+   "Vladimir Joshevski <vjoshevs>",
+   "Slawomir Kaszlikowski <skaszlik>",
+   "Michal Kilar <mkilar>",
+   "Matt Thurston <mthurstocisco>",
+   "Peter Lewis <peter8498>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "cisco",
+   "dc",
+   "nd",
+   "ndfc",
+   "nxos",
+   "networking",
+   "vxlan",
+   "evpn",
+   "nac",
+   "sac"
+  ],
+  "description": "Ansible Solution Collection for VXLAN",
+  "license": [],
+  "license_file": "LICENSE",
+  "dependencies": {
+   "ansible.netcommon": ">=4.1.0",
+   "cisco.dcnm": ">=3.10.0",
+   "community.general": ">=8.5.0"
+  },
+  "repository": "https://github.com/netascode/ansible-dc-vxlan",
+  "documentation": "https://github.com/netascode/ansible-dc-vxlan/blob/main/README.md",
+  "homepage": "https://netascode.cisco.com/docs/data_models/vxlan/overview/",
+  "issues": "https://github.com/netascode/ansible-dc-vxlan/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "151db159a4873ca551b39f6f6b97205b0298a27c2edac5c40d89d02dfd0f14a3",
+  "format": 1
+ },
+ "format": 1
+}

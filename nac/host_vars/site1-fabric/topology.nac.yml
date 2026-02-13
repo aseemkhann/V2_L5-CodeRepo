@@ -1,0 +1,44 @@
+---
+
+vxlan:
+  topology:
+    switches:
+      - name: site1-s1
+        serial_number: 9CXKH7FGMNB
+        role: spine
+        management:
+          management_ipv4_address: 10.15.5.11
+          default_gateway_v4: 10.15.5.1
+      - name: site1-l1
+        serial_number: 97YQPYE9NLN
+        role: leaf
+        management:
+          management_ipv4_address: 10.15.5.12
+          default_gateway_v4: 10.15.5.1
+      - name: site1-l2
+        serial_number: 90K5CH5NU1U
+        role: leaf
+        management:
+          management_ipv4_address: 10.15.5.13
+          default_gateway_v4: 10.15.5.1
+      - name: site1-bl1
+        # Placeholder serial number
+        serial_number: 9PKD2Z8GK31
+        role: border
+        management:
+          management_ipv4_address: 10.15.5.14
+          subnet_mask_ipv4: 24
+          default_gateway_v4: 10.15.5.1
+        poap:
+          preprovision:
+            model: N9K-C9300v
+            # Match serial number above
+            serial_number: FGE20360RRX
+            version: 10.6(2)
+            modulesModel: [N9K-X9364v, N9K-vSUP]
+      - name: site1-bgw1
+        serial_number: 9QJJSV77NWI
+        role: border_gateway
+        management:
+          management_ipv4_address: 10.15.5.15
+          default_gateway_v4: 10.15.5.1

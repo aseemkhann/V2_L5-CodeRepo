@@ -1,0 +1,23 @@
+---
+
+vxlan:
+  global:
+    ibgp:
+      bgp_asn: "65001"
+      route_reflectors: 2
+      anycast_gateway_mac: 1234.5678.9000
+      dns_servers:
+        - ip_address: 10.0.249.16
+          vrf: management
+      ntp_servers:
+        - ip_address: 10.81.254.131
+          vrf: management
+      bootstrap:
+        enable_bootstrap: true
+        enable_local_dhcp_server: true
+        dhcp_version: DHCPv4
+        dhcp_v4:
+          scope_start_address: 10.15.5.200
+          scope_end_address: 10.15.5.201
+          switch_mgmt_default_gw: 10.15.5.1
+          mgmt_prefix: 24

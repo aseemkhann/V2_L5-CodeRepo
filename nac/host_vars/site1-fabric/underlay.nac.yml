@@ -1,0 +1,22 @@
+---
+
+vxlan:
+  underlay:
+    general:
+      routing_protocol: ospf
+      underlay_routing_loopback_id: 0
+      underlay_routing_protocol_tag: UNDERLAY
+      underlay_vtep_loopback_id: 1
+      replication_mode: multicast
+    ipv4:
+      fabric_interface_numbering: p2p
+      subnet_mask: 31
+      underlay_routing_loopback_ip_range: 10.11.0.0/22
+      underlay_vtep_loopback_ip_range: 10.111.100.0/22
+      underlay_rp_loopback_ip_range: 10.251.251.0/24
+      underlay_subnet_ip_range: 10.1.0.0/16
+    ospf:
+      area_id: 0.0.0.0
+    multicast:
+      underlay_rp_loopback_id: 251
+      rp_mode: asm

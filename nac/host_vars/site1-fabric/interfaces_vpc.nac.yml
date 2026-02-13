@@ -1,0 +1,31 @@
+---
+
+vxlan:
+  topology:
+    switches:
+      - name: site1-l1
+        interfaces:
+          - name: port-channel5
+            description: To Server2 bond
+            mode: trunk
+            enabled: true
+            pc_mode: active
+            vpc_id: 5
+            members:
+              - eth1/5
+            mtu: jumbo
+            speed: auto
+            spanning_tree_portfast: true
+      - name: site1-l2
+        interfaces:
+          - name: port-channel5
+            description: To Server2 bond
+            mode: trunk
+            enabled: true
+            pc_mode: active
+            vpc_id: 5
+            members:
+              - eth1/5
+            mtu: jumbo
+            speed: auto
+            spanning_tree_portfast: true

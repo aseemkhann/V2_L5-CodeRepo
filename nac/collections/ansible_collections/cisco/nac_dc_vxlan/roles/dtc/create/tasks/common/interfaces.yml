@@ -1,0 +1,86 @@
+# Copyright (c) 2024 Cisco Systems, Inc. and its affiliates
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+# the Software, and to permit persons to whom the Software is furnished to do so,
+# subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+# FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+# COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+# IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# SPDX-License-Identifier: MIT
+
+---
+
+- name: Set vars_common Based On Fabric Type - VXLAN_EVPN/iBGP_VXLAN
+  ansible.builtin.set_fact:
+    vars_common_local: "{{ vars_common_vxlan }}"
+  when: data_model_extended.vxlan.fabric.type == "VXLAN_EVPN"
+
+- name: Set vars_common Based On Fabric Type - eBGP_VXLAN
+  ansible.builtin.set_fact:
+    vars_common_local: "{{ vars_common_ebgp_vxlan }}"
+  when: data_model_extended.vxlan.fabric.type == "eBGP_VXLAN"
+
+- name: Set vars_common Based On Fabric Type - MSD
+  ansible.builtin.set_fact:
+    vars_common_local: "{{ vars_common_msd }}"
+  when: data_model_extended.vxlan.fabric.type == "MSD"
+
+- name: Set vars_common Based On Fabric Type - ISN
+  ansible.builtin.set_fact:
+    vars_common_local: "{{ vars_common_isn }}"
+  when: data_model_extended.vxlan.fabric.type == "ISN"
+
+- name: Set vars_common Based On Fabric Type - External
+  ansible.builtin.set_fact:
+    vars_common_local: "{{ vars_common_external }}"
+  when: data_model_extended.vxlan.fabric.type == "External"
+
+- name: Manage Fabric Interfaces Entry Point
+  ansible.builtin.debug:
+    msg:
+      - "----------------------------------------------------------------"
+      - "+     Manage Fabric Interfaces {{ data_model_extended.vxlan.fabric.name }}"
+      - "----------------------------------------------------------------"
+
+# --------------------------------------------------------------------
+# Manage Interface All Configuration in Nexus Dashboard
+# --------------------------------------------------------------------
+#
+# This section manages all of the interfaces based on the diff_run setting.
+#
+# When the diff_run feature is active we only manage the difference between
+# the previous run and the current run, otherwise we manage all interfaces
+# defined in the data model.
+
+- name: Initialize Interface Config List to All Interfaces
+  ansible.builtin.set_fact:
+    interface_config_list: "{{ vars_common_local.interface_all_create }}"
+
+- name: Override Interface Config List Based On Diff Run Settings
+  ansible.builtin.set_fact:
+    interface_config_list: "{{ vars_common_local.interface_diff_result.updated }}"
+  when:
+    - run_map_read_result.diff_run is true|bool
+
+- name: Manage Interface All in Nexus Dashboard
+  cisco.dcnm.dcnm_interface:
+    fabric: "{{ data_model_extended.vxlan.fabric.name }}"
+    state: replaced
+    config: "{{ interface_config_list }}"
+  vars:
+    ansible_command_timeout: 5000
+    ansible_connect_timeout: 5000
+  when:
+    - data_model_extended.vxlan.topology.interfaces.modes.all.count > 0
+    - interface_config_list | length > 0

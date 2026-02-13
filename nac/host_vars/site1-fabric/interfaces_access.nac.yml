@@ -1,0 +1,25 @@
+---
+
+vxlan:
+  topology:
+    switches:
+      - name: site1-l1
+        interfaces:
+          - name: Ethernet1/4
+            description: To Server1 E1
+            mode: access
+            enabled: true
+            mtu: jumbo
+            speed: auto
+            access_vlan: 2401
+            spanning_tree_portfast: true
+      - name: site1-l2
+        interfaces:
+          - name: Ethernet1/4
+            description: To Server3 E1
+            mode: access
+            enabled: true
+            mtu: jumbo
+            speed: auto
+            access_vlan: 2401
+            spanning_tree_portfast: true

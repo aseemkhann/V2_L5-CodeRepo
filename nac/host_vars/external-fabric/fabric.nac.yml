@@ -1,0 +1,56 @@
+---
+
+vxlan:
+  fabric:
+    name: external-fabric
+    type: External
+  global:
+    external:
+      bgp_asn: "65000"
+  topology:
+    switches:
+      - name: site1-extrtr1
+        serial_number: 9391D23IWNC
+        role: edge_router
+        management:
+          management_ipv4_address: 10.15.5.16
+          default_gateway_v4: 10.15.5.1
+        interfaces:
+          - name: Ethernet1/1
+            mode: routed
+            description: To Border Leaf Eth1/5
+            enabled: true
+          - name: Ethernet1/1.2
+            mode: routed_sub
+            description: To Border Leaf Eth1/5.2
+            enabled: true
+            dot1q_id: 2
+            ipv4_address: 10.31.0.2/30
+          - name: loopback0
+            mode: loopback
+            description: Ping Test Loopback
+            enabled: true
+            ipv4_address: 172.16.1.1
+  policy:
+    policies:
+      - name: BGP Neighbor Policy
+        template_name: External_VRF_Lite_eBGP
+        template_vars:
+          asn: 65000
+          vrfName: default
+          NEIGHBOR_IP: 10.31.0.1
+          NEIGHBOR_ASN: 65001
+      - name: BGP Network Statement Policy
+        template_name: bgp_network
+        template_vars:
+          BGP_AS: 65000
+          IP_MASK: 172.16.1.1/32
+    groups:
+      - name: External Router
+        policies:
+          - name: BGP Neighbor Policy
+          - name: BGP Network Statement Policy
+    switches:
+      - name: site1-extrtr1
+        groups:
+          - External Router

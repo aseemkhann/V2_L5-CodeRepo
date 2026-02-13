@@ -1,0 +1,65 @@
+---
+
+vxlan:
+  fabric:
+    name: site2-fabric
+    type: VXLAN_EVPN
+  global:
+    ibgp:
+      bgp_asn: "65002"
+      route_reflectors: 2
+      anycast_gateway_mac: 1234.5678.9000
+      dns_servers:
+        - ip_address: 10.0.249.16
+          vrf: management
+      ntp_servers:
+        - ip_address: 10.81.254.131
+          vrf: management
+  underlay:
+    general:
+      routing_protocol: ospf
+      underlay_routing_loopback_id: 0
+      underlay_routing_protocol_tag: UNDERLAY
+      underlay_vtep_loopback_id: 1
+      replication_mode: multicast
+    ipv4:
+      fabric_interface_numbering: p2p
+      subnet_mask: 31
+      underlay_routing_loopback_ip_range: 10.22.0.0/22
+      underlay_vtep_loopback_ip_range: 10.222.100.0/22
+      underlay_rp_loopback_ip_range: 10.252.252.0/24
+      underlay_subnet_ip_range: 10.2.0.0/16
+    ospf:
+      area_id: 0.0.0.0
+    multicast:
+      underlay_rp_loopback_id: 252
+      rp_mode: asm
+  topology:
+    switches:
+      - name: site2-bgw-s1
+        serial_number: 96047Y7XHIL
+        role: border_gateway_spine
+        management:
+          management_ipv4_address: 10.15.5.21
+          default_gateway_v4: 10.15.5.1
+      - name: site2-l1
+        serial_number: 9EKBMDBXZY3
+        role: leaf
+        management:
+          management_ipv4_address: 10.15.5.22
+          default_gateway_v4: 10.15.5.1
+        interfaces:
+          - name: Ethernet1/4
+            description: To Server4 E1
+            mode: access
+            enabled: true
+            mtu: jumbo
+            speed: auto
+            spanning_tree_portfast: true
+          - name: Ethernet1/5
+            description: To Server5 E1
+            mode: access
+            enabled: true
+            mtu: jumbo
+            speed: auto
+            spanning_tree_portfast: true

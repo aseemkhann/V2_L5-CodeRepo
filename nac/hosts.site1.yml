@@ -1,0 +1,6 @@
+---
+# Inventory Information For Site1 Fabric
+nd:
+  hosts:
+    site1-fabric:
+      ansible_host: 10.15.0.23

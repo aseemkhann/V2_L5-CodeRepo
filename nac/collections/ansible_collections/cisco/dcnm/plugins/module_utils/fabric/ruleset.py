@@ -1,0 +1,587 @@
+"""
+Generate a ruleset from a controller template
+"""
+
+# Copyright (c) 2024-2025 Cisco and/or its affiliates.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+from __future__ import absolute_import, division, print_function
+
+__metaclass__ = type  # pylint: disable=invalid-name
+__author__ = "Allen Robel"
+
+
+import inspect
+import json
+import logging
+import re
+from typing import Any, Union
+
+from ..common.conversion import ConversionUtils
+
+
+class RuleSetCommon:
+    """
+    Common methods for the RuleSet class.
+
+    This may be merged back into RuleSet at some point.
+    """
+
+    def __init__(self) -> None:
+        self.class_name = self.__class__.__name__
+
+        self.log = logging.getLogger(f"dcnm.{self.class_name}")
+        self.conversion = ConversionUtils()
+
+        self.re_multi_rule = re.compile(r"^\s*(\(.*\))(.*)(\(.*\))\s*$")
+
+        self.param_name: str = ""
+        self.rule: Union[str, bool] = ""
+        self._template: dict[str, Any] = {}
+        self._ruleset: dict[str, Any] = {}
+
+    def clean_rule(self) -> None:
+        """
+        Clean the rule string.
+        """
+        if not isinstance(self.rule, str):
+            return
+        self.rule = self.rule.strip('"')
+        self.rule = self.rule.strip("'")
+        self.rule = self.rule.replace("$$", "")
+        self.rule = self.rule.replace("&&", " and ")
+        self.rule = self.rule.replace("||", " or ")
+        self.rule = self.rule.replace("==", " == ")
+        self.rule = self.rule.replace("!=", " != ")
+        self.rule = self.rule.replace("(", " ( ")
+        self.rule = self.rule.replace(")", " ) ")
+        self.rule = self.rule.replace("true", "True")
+        self.rule = self.rule.replace("false", "False")
+        self.rule = re.sub(r"\s+", " ", self.rule)
+
+    @property
+    def ruleset(self) -> dict[str, Any]:
+        """
+        - getter : return the ruleset.
+        - setter : set the ruleset.
+        """
+        return self._ruleset
+
+    @ruleset.setter
+    def ruleset(self, value: dict[str, Any]) -> None:
+        self._ruleset = value
+
+    @property
+    def template(self) -> dict[str, Any]:
+        """
+        -   getter : return a controller template.
+        -   setter : set a controller template.
+        -   The template is a dictionary retrieved from the controller.
+        """
+        return self._template
+
+    @template.setter
+    def template(self, value: dict[str, Any]) -> None:
+        method_name: str = inspect.stack()[0][3]
+        if not isinstance(value, dict):
+            msg = f"{self.class_name}.{method_name} must be a dictionary."
+            raise ValueError(msg)
+        self._template = value
+
+    @staticmethod
+    def annotations(parameter: dict[str, Any]) -> dict[str, Any]:
+        """
+        Return the annotations for the parameter, if any.
+
+        Otherwise, return an empty dictionary.
+        """
+        if parameter.get("annotations") is None:
+            return {}
+        if isinstance(parameter["annotations"], dict) is False:
+            return {}
+        return parameter["annotations"]
+
+    def is_mandatory(self, parameter: dict[str, Any]) -> bool:
+        """
+        - Return False if annotations is not present
+        - Return True if annotations["IsMandatory"] is True
+        - Return False if annotations["IsMandatory"] is not present
+        - Return False if annotations["IsMandatory"] is False
+        - Return False if annotations["IsMandatory"] is not set
+        - raise ValueError if all else fails
+        """
+        annotations = self.annotations(parameter)
+        if not annotations:
+            return False
+        if annotations.get("IsMandatory") is None:
+            return False
+        if annotations["IsMandatory"] in ("true", "True", True):
+            return True
+        if annotations["IsMandatory"] in ("false", "False", False):
+            return False
+        raise ValueError(f"Unexpected value for IsMandatory: {annotations['IsMandatory']}")
+
+    def is_show(self, parameter: dict[str, Any]) -> Union[bool, str]:
+        """
+        - Return False if annotations is not present
+        - Return False if annotations["IsShow"] is not present
+        - Return True if annotations["IsShow"] is True
+        - Return False if annotations["IsShow"] is False
+        - Return annotations["IsShow"] if all else fails
+        """
+        annotations = self.annotations(parameter)
+        if not annotations:
+            return False
+        if annotations.get("IsShow") is None:
+            return False
+        if annotations["IsShow"] in ("true", "True", True):
+            return True
+        if annotations["IsShow"] in ("false", "False", False):
+            return False
+        return annotations["IsShow"]
+
+    def is_internal(self, parameter: dict[str, Any]) -> bool:
+        """
+        - Return False if annotations is not present
+        - Return False if annotations["IsInternal"] is not present
+        - Return True if annotations["IsInternal"] is True
+        - Return False if annotations["IsInternal"] is False
+        - raise ValueError if all else fails
+        """
+        annotations = self.annotations(parameter)
+        if not annotations:
+            return False
+        if annotations.get("IsInternal") is None:
+            return False
+        if annotations["IsInternal"] in ("true", "True", True):
+            return True
+        if annotations["IsInternal"] in ("false", "False", False):
+            return False
+        raise ValueError(f"Unexpected value for IsInternal: {annotations['IsInternal']}")
+
+    def section(self, parameter: dict[str, Any]) -> str:
+        """
+        - Return "" if annotations is not present
+        - Return "" if annotations["Section"] is not present
+        - Return annotations["Section"] if present
+        """
+        annotations = self.annotations(parameter)
+        if not annotations:
+            return ""
+        if annotations.get("Section") is None:
+            return ""
+        return annotations["Section"]
+
+    @staticmethod
+    def name(parameter: dict[str, Any]) -> str:
+        """
+        - Return the parameter's name, if present.
+        - Return "" otherwise.
+        """
+        if parameter.get("name") is None:
+            return ""
+        return parameter["name"]
+
+
+class RuleSet(RuleSetCommon):
+    """
+    # Generate a ruleset from a controller template
+
+    ## Usage
+
+    ```python
+    ruleset = RuleSet()
+    ruleset.template = <template>
+    ruleset.commit()
+    rules = ruleset.ruleset
+
+    parameter = "MY_PARAM"
+
+    # Retrieve annotations for MY_PARAM
+    annotations = ruleset.annotations(parameter)
+
+    # Retrieve the annotations.section for MY_PARAM
+    section = ruleset.section(parameter)
+
+    # Retrieve whether "MY_PARAM" is an internal
+    # parameter. (is_internal will be boolean)
+    is_internal = rule.is_internal(parameter)
+
+    # Retrieve whether "MY_PARAM" is mandatory
+    # (is_mandatory will be boolean)
+    is_mandatory = rule.is_mandatory(parameter)
+
+    # Retrieve IsShow for "MY_PARAM"
+    is_show = rule.is_show(parameter)
+    ```
+    """
+
+    def _update_ruleset_no_boolean(self) -> None:
+        """
+        # Summary
+
+        Process rules that contain no boolean terms and generate the structure below.
+
+        ## Raises
+
+        - `ValueError` for unhandled case if rule is a list.
+
+        ## Example
+
+        Parameter `AUTO_VRFLITE_IFC_DEFAULT_VRF`
+
+        ### Incoming Ruleset Structure
+
+        ```
+        "VRF_LITE_AUTOCONFIG != Manual"
+        ```
+
+        ### Generated Ruleset Structure
+
+        ```json
+        {
+            "terms": {
+                "na": [
+                    {
+                        "operator": "!=",
+                        "parameter": "VRF_LITE_AUTOCONFIG",
+                        "value": "Manual"
+                    }
+                ]
+            }
+        }
+
+        """
+        method_name: str = inspect.stack()[0][3]
+        msg = f"key {self.param_name}: {self.rule}"
+        self.log.debug(msg)
+
+        if isinstance(self.rule, bool):
+            # We shouldn't hit this since rules containing only boolean values
+            # are filtered out earlier.  But this disambiguates the type to
+            # str for mypy.
+            return
+
+        self.ruleset[self.param_name] = {}
+        self.ruleset[self.param_name]["terms"] = {}
+        self.ruleset[self.param_name]["terms"]["na"] = []
+
+        if isinstance(self.rule, list):
+            msg = f"{self.class_name}.{method_name}: "
+            msg += "UNHANDLED_CASE: rule is a list."
+            raise ValueError(msg)
+
+        lhs, op, rhs = self.rule.split(" ")
+        rhs = self.conversion.make_boolean(rhs)
+        term: dict[str, Union[str, bool]] = {}
+        term["parameter"] = lhs
+        term["operator"] = op
+        term["value"] = rhs
+        self.ruleset[self.param_name]["terms"]["na"].append(term)
+
+        msg = f"{self.param_name}: "
+        msg += f"{json.dumps(self.ruleset[self.param_name], indent=4, sort_keys=True)}"
+        self.log.debug(msg)
+
+    def _update_ruleset_multi_rule(self) -> None:
+        """
+        # Summary
+
+        Process rules that contain multiple rules and generate the structure below.
+
+        ## Raises
+
+        - `ValueError` for unhandled case if rule operator is not "and" or "or".
+
+        ## Example
+
+        Parameter `L3VNI_MCAST_GROUP`
+
+        ### Incoming Ruleset Structure (parameter L3VNI_MCAST_GROUP)
+
+        `\"($$ENABLE_TRM$$==true && $$UNDERLAY_IS_V6$$!=true) || ($$ENABLE_TRMv6$$==true && $$UNDERLAY_IS_V6$$!=true)\""`
+
+        ### Generated Ruleset Structure
+
+        ```json
+        {
+            "operator": "or",
+            "rules": [
+                {
+                    "terms": {
+                        "and": [
+                            {
+                                "operator": "==",
+                                "parameter": "ENABLE_TRM",
+                                "value": true
+                            },
+                            {
+                                "operator": "!=",
+                                "parameter": "UNDERLAY_IS_V6",
+                                "value": true
+                            }
+                        ]
+                    }
+                },
+                {
+                    "terms": {
+                        "and": [
+                            {
+                                "operator": "==",
+                                "parameter": "ENABLE_TRMv6",
+                                "value": true
+                            },
+                            {
+                                "operator": "!=",
+                                "parameter": "UNDERLAY_IS_V6",
+                                "value": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+
+        """
+        method_name: str = inspect.stack()[0][3]
+        msg = f"key {self.param_name}: {self.rule}"
+        self.log.debug(msg)
+
+        if isinstance(self.rule, bool):
+            # We shouldn't hit this since rules containing only boolean values
+            # are filtered out earlier.  But this disambiguates the type to
+            # str for mypy.
+            return
+
+        match = re.match(self.re_multi_rule, self.rule)
+        if not match:
+            msg = f"{self.class_name}.{method_name}: "
+            msg += "UNHANDLED_CASE: rule does not match re_multi_rule."
+            raise ValueError(msg)
+
+        self.ruleset[self.param_name] = {}
+        self.ruleset[self.param_name]["rules"] = []
+        rule1: str = match.group(1)
+        rule2: str = match.group(3)
+        rule_operator: str = match.group(2).strip()
+        if rule_operator not in ("and", "or"):
+            msg = f"{self.class_name}.{method_name}: "
+            msg += "UNHANDLED_CASE: rule operator is not 'and' or 'or'."
+            raise ValueError(msg)
+        self.ruleset[self.param_name]["operator"] = rule_operator
+        rules: list[str] = [rule1, rule2]
+        for rule in rules:
+            rule = rule.strip()
+            group: str = rule.strip("(").strip(")")
+            rule_list: list[str] = group.split(" and ")
+            if len(rule_list) == 1:
+                rule_list = group.split(" or ")
+
+            rule_list = [x.strip() for x in rule_list]
+            rule_list = [re.sub(r"\s+", " ", x) for x in rule_list]
+            rule_list = [re.sub(r"\"", "", x) for x in rule_list]
+            rule_list = [re.sub(r"\'", "", x) for x in rule_list]
+
+            boolean_type: str = ""
+            if " and " in group:
+                boolean_type = "and"
+            elif " or " in group:
+                boolean_type = "or"
+            else:
+                msg = f"{self.class_name}.{method_name}: "
+                msg += "UNHANDLED_CASE: no boolean found in group."
+                raise ValueError(msg)
+
+            terms_dict: dict[str, list[dict[str, Any]]] = {}
+            terms_dict[boolean_type] = []
+
+            new_rule = []  # used only for logging
+            for item in rule_list:
+                lhs, op, rhs = item.split(" ")
+                rhs = rhs.replace('"', "")
+                rhs = rhs.replace("'", "")
+                rhs = self.conversion.make_boolean(rhs)
+                new_rule.append(f"{lhs} {op} {rhs}")
+
+                term: dict[str, Any] = {}
+                term["parameter"] = lhs
+                term["operator"] = op
+                term["value"] = rhs
+                terms_dict[boolean_type].append(term)
+
+            self.ruleset[self.param_name]["rules"].append({"terms": terms_dict})
+
+            msg = f"{boolean_type.upper()}: key {self.param_name}: {new_rule}"
+            self.log.debug(msg)
+            msg = f"{boolean_type.upper()}: key {self.param_name}: "
+            msg += f"{json.dumps(self.ruleset[self.param_name], indent=4, sort_keys=True)}"
+            self.log.debug(msg)
+
+    def _update_ruleset_boolean(self) -> None:
+        """
+        # Summary
+
+        Process rules that contain only boolean "and" or "or" terms and generate the structure below.
+
+        ## Raises
+
+        - `ValueError` for unhandled case if rule is a list.
+
+        ## Example
+
+        Parameter `INBAND_MGMT`
+
+        ### NOTES
+
+        - `&&` is replaced with ` and ` in `clean_rule()`
+        - `||` is replaced with ` or ` in `clean_rule()`
+
+        ### Incoming Ruleset Structure
+
+        ```
+        "IsShow": "\"LINK_STATE_ROUTING==ospf && UNDERLAY_IS_V6==false\""
+        ```
+
+        ### Generated Ruleset Structure
+
+        ```json
+        {
+            "terms": {
+                "and": [
+                    {
+                        "operator": "==",
+                        "parameter": "LINK_STATE_ROUTING",
+                        "value": "ospf"
+                    },
+                    {
+                        "operator": "==",
+                        "parameter": "UNDERLAY_IS_V6",
+                        "value": "false"
+                    }
+                ]
+            }
+        }
+        ```
+        """
+        if isinstance(self.rule, bool):
+            # We shouldn't hit this since rules containing only boolean values
+            # are filtered out earlier.  But this disambiguates the type to
+            # str for mypy.
+            return
+        boolean_type: str = ""
+        if "and" in self.rule:
+            boolean_type = "and"
+        elif "or" in self.rule:
+            boolean_type = "or"
+        else:
+            return
+
+        rule_list: list[str] = self.rule.split(boolean_type)
+
+        rule_list = [x.strip() for x in rule_list]
+        rule_list = [re.sub(r"\s+", " ", x) for x in rule_list]
+        rule_list = [re.sub(r"\"", "", x) for x in rule_list]
+        rule_list = [re.sub(r"\'", "", x) for x in rule_list]
+
+        self.ruleset[self.param_name] = {}
+        self.ruleset[self.param_name]["terms"] = {}
+        self.ruleset[self.param_name]["terms"][boolean_type] = []
+
+        new_rule: list[str] = []  # used only for logging
+        for item in rule_list:
+            lhs, op, rhs = item.split(" ")
+            rhs = rhs.replace('"', "")
+            rhs = rhs.replace("'", "")
+            rhs = self.conversion.make_boolean(rhs)
+            new_rule.append(f"{lhs} {op} {rhs}")
+
+            term: dict[str, Union[str, bool]] = {}
+            term["parameter"] = lhs
+            term["operator"] = op
+            term["value"] = rhs
+            self.ruleset[self.param_name]["terms"][boolean_type].append(term)
+
+        msg = f"{boolean_type.upper()}: key {self.param_name}: {new_rule}"
+        self.log.debug(msg)
+        msg = f"{boolean_type.upper()}: key {self.param_name}: "
+        msg += f"{json.dumps(self.ruleset[self.param_name], indent=4, sort_keys=True)}"
+        self.log.debug(msg)
+
+    def _update_ruleset(self) -> None:
+        """
+        Update the ruleset for self.parameter and self.rule
+        """
+        if self.rule is None:
+            return
+        if self.rule in ("true", "True", True):
+            return
+        if self.rule in ("false", "False", False):
+            return
+        # needed for mypy type disambiguation
+        if isinstance(self.rule, bool):
+            return
+        self.clean_rule()
+
+        match = re.match(self.re_multi_rule, self.rule)
+        if match:
+            self._update_ruleset_multi_rule()
+        elif "and" in self.rule and "or" not in self.rule:
+            self._update_ruleset_boolean()
+        elif "or" in self.rule and "and" not in self.rule:
+            self._update_ruleset_boolean()
+        elif "and" not in self.rule and "or" not in self.rule:
+            self._update_ruleset_no_boolean()
+        else:
+            msg = "TODO: UNHANDLED_CASE: "
+            msg += f"param_name: {self.param_name} rule: {self.rule}"
+            self.log.debug(msg)
+
+    def refresh(self) -> None:
+        """
+        Refresh the ruleset from the template.
+
+        - raise ValueError if template is not set.
+        - raise ValueError if template has no parameters.
+        - raise ValueError if template[parameters] is not a list.
+        """
+        method_name: str = inspect.stack()[0][3]
+        if not self.template:
+            msg = f"{self.class_name}.{method_name}: "
+            msg += "template is not set.  "
+            msg += f"Set {self.class_name}.template "
+            msg += f"before calling {self.class_name}.{method_name}()."
+            raise ValueError(msg)
+        if self.template.get("parameters") is None:
+            msg = f"{self.class_name}.{method_name}: "
+            msg += "No parameters in template."
+            raise ValueError(msg)
+        if isinstance(self.template["parameters"], list) is False:
+            msg = f"{self.class_name}.{method_name}: "
+            msg += "template[parameters] is not a list."
+            raise ValueError(msg)
+
+        self._ruleset = {}
+
+        for parameter in self.template["parameters"]:
+            if self.is_internal(parameter) is True:
+                continue
+            if "Hidden" in self.section(parameter):
+                continue
+            self.param_name = self.name(parameter)
+            if not self.param_name:
+                msg = f"{self.class_name}.{method_name}: "
+                msg += f"name key missing from parameter: {parameter}"
+                raise ValueError(msg)
+            self.rule = self.is_show(parameter)
+            self._update_ruleset()

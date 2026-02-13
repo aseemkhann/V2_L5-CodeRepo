@@ -1,0 +1,39 @@
+---
+
+vxlan:
+  overlay_extensions:
+    vrf_lites:
+      - name: NaC-VRF-Lite01
+        vrf: NaC-VRF01
+        switches:
+          - name: site1-bl1
+            router_id: 10.31.0.1
+            bgp_peers:
+              - address: 10.31.0.2
+                remote_as: 65000
+                description: Peer to site1-extrtr1 in external-fabric
+                address_family_ipv4_unicast:
+                  send_community: true
+                  send_ext_community: true
+                  route_map_out: extcon-rmap-filter
+            static_routes:
+              static_ipv4:
+                - prefix: 0.0.0.0/0
+                  next_hops:
+                    - ip: 10.31.0.2
+  policy:
+    policies:
+      - name: BGP Network Statement Policy
+        template_name: bgp_vrf_network
+        template_vars:
+          BGP_AS: 65001
+          VRF_NAME: NaC-VRF01
+          IP_PREFIX: 0.0.0.0/0
+    groups:
+      - name: Border Leaf
+        policies:
+          - name: BGP Network Statement Policy
+    switches:
+      - name: site1-bl1
+        groups:
+          - Border Leaf

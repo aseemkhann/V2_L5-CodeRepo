@@ -1,0 +1,52 @@
+---
+
+vxlan:
+  policy:
+    policies:
+      - name: clock timezone
+        template_name: clock_timezone
+        template_vars:
+          TIME_ZONE: CET
+          HOUR_OFFSET: 1
+          MINUTE_OFFSET: 0
+      - name: clock summertime
+        template_name: clock_summertime
+        template_vars:
+          SUMMER_TIME: 'CEST 5 SUNDAY MARCH 02:00 5 SUNDAY OCTOBER 03:00 60'
+      - name: alias
+        template_name: switch_freeform
+        template_vars:
+          CONF: |-
+            cli alias name wr copy run start
+      - name: banner
+        template_name: banner
+        template_vars:
+          BANNER: |-
+            ***************************************************************************
+            *                        Cisco Live - LTRDCN-3439                         *
+            ***************************************************************************
+          BANNERDELIMITER: "_"
+          TYPE: "motd"
+    groups:
+      - name: common policies
+        policies:
+          - name: clock summertime
+          - name: clock timezone
+          - name: alias
+          - name: banner
+    switches:
+      - name: site1-s1
+        groups:
+          - common policies
+      - name: site1-l1
+        groups:
+          - common policies
+      - name: site1-l2
+        groups:
+          - common policies
+      - name: site1-bl1
+        groups:
+          - common policies
+      - name: site1-bgw1
+        groups:
+          - common policies

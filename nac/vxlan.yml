@@ -1,0 +1,19 @@
+---
+# This is the main entry point playbook for calling the various
+# roles in this collection.
+- name: Main Playbook
+  hosts: nd
+  any_errors_fatal: true
+  gather_facts: false
+
+  roles:
+    # -----------------------
+    # DataCenter Roles
+    # cisco.nac_dc_vxlan.dtc manages direct to controller ND workflows
+    #
+    - role: cisco.nac_dc_vxlan.dtc.create
+      tags: 'role_create'
+    - role: cisco.nac_dc_vxlan.dtc.deploy
+      tags: 'role_deploy'
+    - role: cisco.nac_dc_vxlan.dtc.remove
+      tags: 'role_remove'

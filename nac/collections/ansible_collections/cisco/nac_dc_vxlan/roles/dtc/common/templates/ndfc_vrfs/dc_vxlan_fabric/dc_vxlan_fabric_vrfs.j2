@@ -1,0 +1,75 @@
+{# Auto-generated NDFC DC VXLAN EVPN VRFs config data structure for fabric {{ vxlan.fabric.name }} #}
+{% set simplified_fabric_type = data_model_extended.vxlan.fabric.simplified_type %}
+{% set vrfs = [] %}
+{% if data_model_extended.vxlan.overlay.vrfs is defined and data_model_extended.vxlan.overlay.vrfs %}
+{% set vrfs = data_model_extended.vxlan.overlay.vrfs %}
+{% endif %}
+{% for vrf in vrfs %}
+- vrf_name: {{ vrf['name'] }}
+{# ------------------------------------------------------ #}
+{# Properties Section                                     #}
+{# ------------------------------------------------------ #}
+  vrf_id: {{ vrf['vrf_id'] | default(omit) }}
+  vlan_id: {{ vrf['vlan_id'] | default(omit) }}
+  l3vni_wo_vlan: {{ vrf['enable_l3_vni_no_vlan'] | default(defaults.vxlan.global[simplified_fabric_type].enable_l3_vni_no_vlan) }}
+  vrf_vlan_name: {{ vrf['vrf_vlan_name'] | default(omit) }}
+  vrf_intf_desc: {{ vrf['vrf_intf_desc'] | default(defaults.vxlan.overlay.vrfs.vrf_intf_desc) }}
+  vrf_description: {{ vrf['vrf_description'] | default(defaults.vxlan.overlay.vrfs.vrf_description) }}
+  vrf_int_mtu: {{ vrf['vrf_int_mtu'] | default(defaults.vxlan.overlay.vrfs.vrf_int_mtu) }}
+  loopback_route_tag: {{ vrf['loopback_route_tag'] | default(defaults.vxlan.overlay.vrfs.loopback_route_tag) }}
+  max_bgp_paths: {{ vrf['max_bgp_paths'] | default(defaults.vxlan.overlay.vrfs.max_bgp_paths) }}
+  max_ibgp_paths: {{ vrf['max_ibgp_paths'] | default(defaults.vxlan.overlay.vrfs.max_ibgp_paths) }}
+  ipv6_linklocal_enable: {{ vrf['ipv6_linklocal_enable'] | default(defaults.vxlan.overlay.vrfs.ipv6_linklocal_enable) }}
+  adv_host_routes: {{ vrf['adv_host_routes'] | default(defaults.vxlan.overlay.vrfs.adv_host_routes) }}
+  adv_default_routes: {{ vrf['adv_default_routes'] | default(defaults.vxlan.overlay.vrfs.adv_default_routes) }}
+  static_default_route: {{ vrf['static_default_route'] | default(defaults.vxlan.overlay.vrfs.static_default_route) }}
+  bgp_password: {{ vrf['bgp_password'] | default(omit) }}
+  bgp_password_encryption_type: {{ vrf['bgp_password_encryption_type'] | default(omit) }}
+  disable_rt_auto: {{ vrf['disable_rt_auto'] | default(defaults.vxlan.overlay.vrfs.disable_rt_auto) }}
+  export_evpn_rt: {{ vrf['export_evpn_rt'] | default(omit) }}
+  export_mvpn_rt: {{ vrf['export_mvpn_rt'] | default(omit) }}
+  export_vpn_rt: {{ vrf['export_vpn_rt'] | default(omit) }}
+  import_evpn_rt: {{ vrf['import_evpn_rt'] | default(omit) }}
+  import_mvpn_rt: {{ vrf['import_mvpn_rt'] | default(omit) }}
+  import_vpn_rt: {{ vrf['import_vpn_rt'] | default(omit) }}
+  netflow_enable: {{ vrf['netflow_enable'] | default(defaults.vxlan.overlay.vrfs.netflow_enable) }}
+{% if vrf['netflow_enable'] is defined and vrf['netflow_enable'] | ansible.builtin.bool %}
+  nf_monitor: {{ vrf['netflow_monitor'] }}
+{% endif %}
+{# Prior to NDFC 12.2.2, NDFC supported Tenant Routed Multicast (TRM) IPv4. #}
+{# With NDFC 12.2.2, NDFC added support for TRMv6 with a new tab TRM on the Create VRF page for enabling forwarding of multicast traffic for IPv4 or IPv6. #}
+{# Existing IPv4 TRM fields are moved from the Advanced tab to the TRM tab. #}
+  no_rp: {{ vrf['no_rp'] | default(defaults.vxlan.overlay.vrfs.no_rp) }}
+  trm_enable: {{ vrf['trm_enable'] | default(defaults.vxlan.overlay.vrfs.trm_enable) }}
+{% if vrf['trm_enable'] is defined and vrf['trm_enable'] | ansible.builtin.bool %}
+  overlay_mcast_group: {{ vrf['overlay_multicast_group'] | default(omit) }}
+  rp_address: {{ vrf['rp_address'] | default(omit) }}
+  rp_external: {{ vrf['rp_external'] | default(omit) }}
+  rp_loopback_id: {{ vrf['rp_loopback_id'] | default(omit) }}
+  trm_bgw_msite: {{ vrf['trm_bgw_msite'] | default(defaults.vxlan.overlay.vrfs.trm_bgw_msite) }}
+{# Staging trmv6 attributes for later usage after low-level collection adds support. #}
+{#   trmv6_enable: {{ vrf['trmv6_enable'] | default(defaults.vxlan.overlay.vrfs.trmv6_enable) }} #}
+{#   trmv6_no_rp: {{ vrf['trmv6_no_rp'] | default(defaults.vxlan.overlay.vrfs.trmv6_no_rp) }} #}
+{#   trmv6_overlay_mcast_group: {{ vrf['trmv6_overlay_multicast_group'] | default(omit) }} #}
+{#   trmv6_rp_address: {{ vrf['trmv6_rp_address'] | default(omit) }} #}
+{#   trmv6_rp_external: {{ vrf['trmv6_rp_external'] | default(defaults.vxlan.overlay.vrfs.trmv6_rp_external) }} #}
+  underlay_mcast_ip: {{ vrf['underlay_mcast_ip'] | default(omit) }}
+{% endif %}
+  redist_direct_rmap: {{ vrf['redist_direct_routemap'] | default(defaults.vxlan.overlay.vrfs.redist_direct_routemap) }}
+{% if (ndfc_version | cisco.nac_dc_vxlan.version_compare('12.2.2', '>=')) %}
+  v6_redist_direct_rmap: {{ vrf['ipv6_redist_direct_routemap'] | default(defaults.vxlan.overlay.vrfs.ipv6_redist_direct_routemap) }}
+{% endif %}
+{# ------------------------------------------------------ #}
+{# Attach Group Section                                   #}
+{# ------------------------------------------------------ #}
+{% if vrf['vrf_attach_group'] is defined %}
+  attach:
+{% if data_model_extended.vxlan.overlay.vrf_attach_groups_dict is defined and data_model_extended.vxlan.overlay.vrf_attach_groups_dict %}
+{% set vrf_attach_groups_dict = data_model_extended.vxlan.overlay.vrf_attach_groups_dict %}
+{% endif %}
+{% for attach in vrf_attach_groups_dict[vrf['vrf_attach_group']] %}
+    - ip_address: {{ attach['mgmt_ip_address'] }}
+{% endfor %}
+{% endif %}
+  deploy: false
+{% endfor %}

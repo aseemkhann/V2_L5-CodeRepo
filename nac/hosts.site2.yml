@@ -1,0 +1,6 @@
+---
+# Inventory Information For Site2 Fabric
+nd:
+  hosts:
+    site2-fabric:
+      ansible_host: 10.15.0.23

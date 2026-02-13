@@ -1,0 +1,18 @@
+---
+
+vxlan:
+  topology:
+    switches:
+      - name: site1-bl1
+        interfaces:
+          - name: Ethernet1/5
+            mode: routed
+            description: To ExtRtr Eth1/1
+            enabled: true
+          - name: Ethernet1/5.2
+            mode: routed_sub
+            description: To ExtRtr Eth1/1.2
+            enabled: true
+            dot1q_id: 2
+            vrf: NaC-VRF01
+            ipv4_address: 10.31.0.1/30

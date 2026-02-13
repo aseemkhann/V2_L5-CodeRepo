@@ -1,0 +1,8 @@
+---
+
+vxlan:
+  topology:
+    vpc_peers:
+      - peer1: site1-l1
+        peer2: site1-l2
+        fabric_peering: true

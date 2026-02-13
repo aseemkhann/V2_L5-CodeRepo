@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/cisco-nac_dc_vxlan-0.6.0.tar.gz
+format_version: 1.0.0
+name: nac_dc_vxlan
+namespace: cisco
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 0.6.0
+version_url: /api/v3/plugin/ansible/content/published/collections/index/cisco/nac_dc_vxlan/versions/0.6.0/

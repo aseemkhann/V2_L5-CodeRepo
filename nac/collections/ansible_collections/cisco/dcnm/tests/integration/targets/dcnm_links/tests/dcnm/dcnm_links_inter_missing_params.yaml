@@ -1,0 +1,273 @@
+##############################################
+##               SETUP                      ##
+##############################################
+
+- name: Remove local log file
+  local_action: command rm -f dcnm_links.log
+
+- block:
+    ##############################################
+    ##        NEGATIVE MERGE (MISSING PARAMS)    ##
+    ##############################################
+
+    - name: Create Links with invalid template name
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_num_fabric }}"
+            src_interface: "{{ intf_1_1 }}"
+            dst_interface: "{{ intf_1_1 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_num_switch2 }}"
+            template: dcnm_links_invalid_template
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: invalid_template
+
+    - name: Create Links without source fabric
+      cisco.dcnm.dcnm_links:
+        state: merged
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_src_fabric
+
+    - name: Create Links without destination fabric
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_dst_fabric
+
+    - name: Create Links without source interface
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_src_interface
+
+    - name: Create Links without destination interface
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_dst_interface
+
+    - name: Create Links without source device
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_src_device
+
+    - name: Create Links without destination device
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_dst_device
+
+    - name: Create Links without template
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_template
+
+    - name: Create Links without ipv4_subnet
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_ipv6_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_ipv6_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_ipv6_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_ipv4_subnet
+
+    - name: Create Links without ipv4_addr (using overlay template)
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_evpn_multisite_overlay_setup
+            profile:
+              neighbor_ip: 193.168.3.2
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+              trm_enabled: false
+      ignore_errors: true
+      register: no_ipv4_addr
+
+    - name: Create Links without neighbor_ip
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_multisite_underlay_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              src_asn: "{{ ansible_num_asn }}"
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_neighbor_ip
+
+    - name: Create Links without src_asn
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_fabric_setup
+            profile:
+              ipv4_subnet: 193.168.1.1/24
+              neighbor_ip: 193.168.1.2
+              dst_asn: "{{ ansible_unnum_asn }}"
+      ignore_errors: true
+      register: no_src_asn
+
+    - name: Create Links without dst_asn
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_3 }}"
+            dst_interface: "{{ intf_1_3 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_evpn_multisite_overlay_setup
+            profile:
+              ipv4_addr: 193.168.1.1
+              neighbor_ip: 193.168.1.2
+              src_asn: "{{ ansible_num_asn }}"
+      ignore_errors: true
+      register: no_dst_asn
+
+    - name: Create Links without profile
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            template: ext_multisite_underlay_setup
+      ignore_errors: true
+      register: no_profile
+
+    - name: Create Links with invalid profile parameters
+      cisco.dcnm.dcnm_links:
+        state: merged
+        src_fabric: "{{ ansible_num_fabric }}"
+        config:
+          - dst_fabric: "{{ ansible_unnum_fabric }}"
+            src_interface: "{{ intf_1_1 }}"
+            dst_interface: "{{ intf_1_1 }}"
+            src_device: "{{ ansible_num_switch1 }}"
+            dst_device: "{{ ansible_unnum_switch1 }}"
+            template: ext_multisite_underlay_setup
+            profile:
+              dummy: 1
+      ignore_errors: true
+      register: bad_profile
