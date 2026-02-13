@@ -1,0 +1,6 @@
+---
+# Inventory Information For MSD Fabric
+nd:
+  hosts:
+    msd-fabric-group:
+      ansible_host: 10.15.0.23

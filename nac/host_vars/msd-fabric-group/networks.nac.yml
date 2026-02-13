@@ -1,0 +1,48 @@
+---
+
+vxlan:
+  multisite:
+    overlay:
+      networks:
+        - name: NaC-Net01
+          vrf_name: NaC-VRF01
+          net_id: 240001
+          vlan_id: 2401
+          vlan_name: NaC-Net01_vlan2401
+          gw_ip_address: 192.168.1.1/24
+          child_fabrics:
+            - name: site1-fabric
+            - name: site2-fabric
+          network_attach_group: net01
+        - name: NaC-Net02
+          vrf_name: NaC-VRF01
+          net_id: 240002
+          vlan_id: 2402
+          vlan_name: NaC-Net02_vlan2402
+          gw_ip_address: 192.168.2.1/24
+          child_fabrics:
+            - name: site1-fabric
+            - name: site2-fabric
+          network_attach_group: net02
+      network_attach_groups:
+        - name: net01
+          switches:
+            - hostname: site1-l1
+              ports:
+                - ethernet1/4
+            - hostname: site1-l2
+              ports:
+                - ethernet1/4
+            - hostname: site1-bgw1
+            - hostname: site2-l1
+              ports:
+                - ethernet1/4
+            - hostname: site2-bgw-s1
+        - name: net02
+          switches:
+            - hostname: site1-l1
+              ports:
+                - port-channel5
+            - hostname: site1-l2
+              ports:
+                - port-channel5

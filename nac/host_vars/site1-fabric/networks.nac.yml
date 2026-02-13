@@ -1,36 +1,36 @@
----
-
-vxlan:
-  overlay:
-    networks:
-      - name: NaC-Net01
-        vrf_name: NaC-VRF01
-        net_id: 240001
-        vlan_id: 2401
-        vlan_name: NaC-Net01_vlan2401
-        gw_ip_address: 192.168.1.1/24
-        network_attach_group: leaf1_leaf2_access
-      - name: NaC-Net02
-        vrf_name: NaC-VRF01
-        net_id: 240002
-        vlan_id: 2402
-        vlan_name: NaC-Net02_vlan2402
-        gw_ip_address: 192.168.2.1/24
-        network_attach_group: leaf1_leaf2_vpc
-    network_attach_groups:
-      - name: leaf1_leaf2_access
-        switches:
-          - hostname: site1-l1
-            ports:
-              - ethernet1/4
-          - hostname: site1-l2
-            ports:
-              - ethernet1/4
-      - name: leaf1_leaf2_vpc
-        switches:
-          - hostname: site1-l1
-            ports:
-              - port-channel5
-          - hostname: site1-l2
-            ports:
-              - port-channel5
+# ---
+# 
+# vxlan:
+#   overlay:
+#     networks:
+#       - name: NaC-Net01
+#         vrf_name: NaC-VRF01
+#         net_id: 240001
+#         vlan_id: 2401
+#         vlan_name: NaC-Net01_vlan2401
+#         gw_ip_address: 192.168.1.1/24
+#         network_attach_group: leaf1_leaf2_access
+#       - name: NaC-Net02
+#         vrf_name: NaC-VRF01
+#         net_id: 240002
+#         vlan_id: 2402
+#         vlan_name: NaC-Net02_vlan2402
+#         gw_ip_address: 192.168.2.1/24
+#         network_attach_group: leaf1_leaf2_vpc
+#     network_attach_groups:
+#       - name: leaf1_leaf2_access
+#         switches:
+#           - hostname: site1-l1
+#             ports:
+#               - ethernet1/4
+#           - hostname: site1-l2
+#             ports:
+#               - ethernet1/4
+#       - name: leaf1_leaf2_vpc
+#         switches:
+#           - hostname: site1-l1
+#             ports:
+#               - port-channel5
+#           - hostname: site1-l2
+#             ports:
+#               - port-channel5

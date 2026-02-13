@@ -1,0 +1,9 @@
+---
+
+vxlan:
+  multisite:
+    child_fabrics:
+      - name: site1-fabric
+      - name: site1-isn
+      - name: site2-fabric
+      - name: site2-isn
