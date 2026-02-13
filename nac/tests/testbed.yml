@@ -1,0 +1,20 @@
+---
+testbed:
+  name: ND
+  alias: ND
+  credentials:
+      default:
+        username: admin
+        password: cisco.123
+devices:
+  msd-fabric-group:
+    os: nd
+    connections:
+      rest:
+        class: rest.connector.Rest
+        ip: 10.15.0.23
+        protocol: https
+        verify: False
+        custom:
+          abstraction:
+            order: [os]
