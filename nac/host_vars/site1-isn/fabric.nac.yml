@@ -1,0 +1,47 @@
+---
+
+vxlan:
+  fabric:
+    name: site1-isn
+    type: ISN
+  multisite:
+    isn:
+      bgp_asn: "65101"
+  topology:
+    switches:
+      - name: site1-isn1
+        serial_number: 92GMPMGNVPP
+        role: core_router
+        management:
+          default_gateway_v4: 10.15.5.1
+          management_ipv4_address: 10.15.5.17
+        interfaces:
+          - name: Loopback101
+            mode: loopback
+            description: Route Server Loopback
+            enabled: true
+            ipv4_address: 10.101.101.101
+            ipv4_route_tag: 54321
+          - name: Ethernet1/1
+            mode: routed
+            description: To Site2 ISN1 Eth1/1
+            enabled: true
+            ipv4_address: 10.0.0.0/31
+  policy:
+    policies:
+      - name: ebgp_neighbor
+        template_name: ext_bgp_neighbor
+        template_vars:
+          asn: "65101"
+          NEIGHBOR_ASN: "65201"
+          NEIGHBOR_IP: "10.0.0.1"
+          IF_NAME: "Ethernet1/1"
+          ENABLE_LOG_NEIGHBOR_CHANGE: true
+    groups:
+      - name: isn
+        policies:
+          - name: ebgp_neighbor
+    switches:
+      - name: site1-isn1
+        groups:
+          - isn

@@ -1,0 +1,6 @@
+---
+# Inventory Information For Site1 ISN Fabric
+nd:
+  hosts:
+    site1-isn:
+      ansible_host: 10.15.0.23
